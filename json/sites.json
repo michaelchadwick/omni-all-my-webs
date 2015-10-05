@@ -1,5 +1,4 @@
-{
-  "sites" : [
+{ "sites" : [
   {
     "name": "Audiohash",
     "url":  "http://audiohash.codana.me"
@@ -35,7 +34,7 @@
   {
     "name": "MichaelChadwick.info",
     "url":  "http://michaelchadwick.info"
-  }
+  },
   {
     "name": "Nebyoolae.com (Bandcamp)",
     "url":  "http://nebyoolae.com"
