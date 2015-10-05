@@ -1,0 +1,54 @@
+{ "sites" : [
+  {
+    "name": "Audiohash",
+    "url":  "http://audiohash.codana.me"
+  },
+  {
+    "name": "Codana.me",
+    "url":  "http://codana.me"
+  },
+  {
+    "name": "FUN.CODANA.ME",
+    "url":  "http://fun.codana.me"
+  },
+  {
+    "name": "Gem Warrior",
+    "url":  "http://gw.codana.me"
+  },
+  {
+    "name": "Man Cave Jam",
+    "url":  "http://mcj.nebyoolae.com"
+  },
+  {
+    "name": "MichaelChadwick.info",
+    "url":  "http://michaelchadwick.info"
+  }
+  {
+    "name": "Nebyoolae.com (Bandcamp)",
+    "url":  "http://nebyoolae.com"
+  },
+  {
+    "name": "NebyooBlog",
+    "url":  "http://blog.nebyoolae.com"
+  },
+  {
+    "name": "Puppy Bongos (Wordpress.com)",
+    "url":  "http://puppybongos.wordpress.com"
+  },
+  {
+    "name": "Pure Yellow Colour",
+    "url":  "http://pyc.nebyoolae.com"
+  },
+  {
+    "name": "Soundcloud Testing",
+    "url":  "http://soundcloud.codana.me"
+  },
+  {
+    "name": "Standing Desk App",
+    "url":  "http://sda.codana.me"
+  },
+  {
+    "name": "Video Game Hosting",
+    "url":  "http://vg.nebyoolae.com"
+  }
+] }
