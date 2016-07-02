@@ -39,7 +39,7 @@ iframe.lazy-loaded {
 }
 
 h1 {
-  margin: 0.4em 0;
+  margin: 0.3em 0;
 }
 h2, h3 {
   border: 1px solid #C0A574;
@@ -62,24 +62,30 @@ h4 {
 .header-container {
   background: #E9E0CF;
   border-bottom: 5px solid #D0BC94;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+}
+.header-container .wrapper {
+  margin: 0 2%;
 }
 
-.title {
+.header-container .wrapper .title {
   color: #4F4023;
 }
 
-.main {
-  padding: 10px 0;
-  width: 90%;
+.main-container {
+  padding: 0;
 }
-
-.main article {
+.main-container .wrapper, .main-container .main {
+  margin: 0 auto;
+  padding: 2px 0;
+  width: 97%;
+}
+.main-container .wrapper article {
+  margin: 0 auto;
   width: 100%;
 }
-
-.wrapper {
-  margin: 0 5%;
+.main-container .wrapper article#toc {
+  padding: 0px 30px 10px 0px;
 }
 
 .footer-container {
