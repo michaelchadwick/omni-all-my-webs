@@ -12,14 +12,20 @@ a:hover {
 }
 
 .iframe-frame {
-  border: 1px solid #C0A574;
+  border: 2px solid #111;
   border-top: none;
   -webkit-box-shadow: 0 5px 10px #C0A574;
   -moz-box-shadow: 0 5px 10px #C0A574;
   box-shadow: 0 5px 10px #C0A574;
   height: 200px;
   margin-bottom: 20px;
+	overflow-y: scroll;
   padding: 0;
+}
+@media (max-width: 768px) {
+	.iframe-frame {
+		border: none;
+	}
 }
 
 iframe {
@@ -42,9 +48,15 @@ h1 {
   margin: 0.3em 0;
 }
 h2, h3 {
-  border: 1px solid #C0A574;
+  border: 2px solid #111;
   border-bottom: none;
   margin: 0;
+}
+@media (max-width: 768px) {
+	h2, h3 {
+		border-left: none;
+		border-right: none;
+	}
 }
 h2 {
   background: #C0A574;
@@ -80,12 +92,17 @@ h4 {
   padding: 2px 0;
   width: 97%;
 }
+@media (max-width: 768px) {
+	.main-container .wrapper, .main-container .main {
+		width: 100%;
+	}
+}
 .main-container .wrapper article {
   margin: 0 auto;
   width: 100%;
 }
-.main-container .wrapper article#toc {
-  padding: 0px 30px 10px 0px;
+.main-container .wrapper select#toc {
+  margin: 0px 30px 10px 0px;
 }
 
 .footer-container {
