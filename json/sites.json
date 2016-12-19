@@ -3,6 +3,10 @@
     "name": "Audiohash",
     "url":  "http://audiohash.codana.me"
   },
+	{
+		"name": "Blazz",
+		"url":  "http://blazz.xyz"
+	},
   {
     "name": "Codana.me",
     "url":  "http://codana.me"
@@ -70,10 +74,6 @@
   {
     "name": "The Escort Mission Podcast",
     "url":  "http://tem.nebyoolae.com"
-  },
-  {
-    "name": "Video Game Hosting",
-    "url":  "http://vg.nebyoolae.com"
   }
   ]
 }
