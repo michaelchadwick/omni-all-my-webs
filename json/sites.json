@@ -1,4 +1,4 @@
-{ "sites" : [
+[
   {
     "name": "Audiohash",
     "url":  "http://audiohash.codana.me"
@@ -26,6 +26,10 @@
   {
     "name": "Gem Warrior (HTML5)",
     "url":  "http://gw-web.codana.me"
+  },
+  {
+    "name": "Is Dave Still With Us?",
+    "url":  "http://isdavestillwith.us"
   },
   {
     "name": "Just Pick One",
@@ -60,6 +64,10 @@
     "url":  "http://pyc.nebyoolae.com"
   },
   {
+    "name": "Raffler",
+    "url":  "http://raffler.win"
+  },
+  {
     "name": "Sketchage",
     "url":  "http://sketchage.codana.me"
   },
@@ -71,5 +79,4 @@
     "name": "The Escort Mission Podcast",
     "url":  "http://tem.nebyoolae.com"
   }
-  ]
-}
+]

@@ -3,9 +3,9 @@ $(function() {
     $toc = $("select#toc");
     $sites = $("article#sites");
     $.getJSON("json/sites.json")
-    .success(function(json) {
+    .success(function(data) {
       $sites.html("");
-      $.each(json.sites, function(k, v) {
+      $.each(data, function(k, v) {
         $toc.append("<option name='" + v.name.replace(/\s/g, '').toLowerCase() + "'>" + v.name + "</option>");
         $sites.append("<a name='" + v.name.replace(/\s/g, '').toLowerCase() + "'></a><section><h2>" + v.name + "</h2><h3><a href='" + v.url + "'>" + v.url + "</a></h3><div class='iframe-frame'><iframe data-src='" + v.url + "' height='200'></iframe></div></section>");
       });
