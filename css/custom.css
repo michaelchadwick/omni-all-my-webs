@@ -14,7 +14,18 @@ a:hover {
 article {
   padding: 0;
 }
-
+section {
+  float: none;
+  margin: 0;
+  width: 100%;
+}
+@media (min-width: 1030px) {
+  section {
+    float: left;
+    margin: auto 5px auto 0;
+    width: 49%;
+  }
+}
 .iframe-frame {
   border: 2px solid #111;
   border-top: none;
@@ -39,12 +50,12 @@ iframe {
   transition: opacity .333s ease-in;
   width: 100%;
 }
-iframe.lazy-loading {
+.lazy-loading {
   background: #000;
   opacity: 0.5;
   width: 100%;
 }
-iframe.lazy-loaded {
+.lazy-loaded {
   opacity: 1;
 }
 
@@ -56,7 +67,7 @@ h2, h3 {
   border-bottom: none;
   margin: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	h2, h3 {
 		border-left: none;
 		border-right: none;
@@ -91,22 +102,31 @@ h4 {
 .main-container {
   padding: 0;
 }
-.main-container .wrapper, .main-container .main {
+.main-container .wrapper,
+.main-container .main {
   margin: 0 auto;
   padding: 2px 0;
   width: 97%;
 }
-@media (max-width: 768px) {
-	.main-container .wrapper, .main-container .main {
-		width: 100%;
+@media (max-width: 767px) {
+	.main-container .wrapper,
+  .main-container .main {
+		width: 97%;
 	}
 }
 .main-container .wrapper article {
   margin: 0 auto;
   width: 100%;
 }
-.main-container .wrapper select#toc {
-  margin: 0px 30px 10px 0px;
+#toc {
+  margin: 0 30px 10px 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #toc {
+    margin: 0 30px 10px 0;
+    width: auto;
+  }
 }
 
 .footer-container {
