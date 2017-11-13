@@ -1,8 +1,9 @@
 /* global $ */
 $(function ($) {
+  var $toc = $('select#toc')
+  var $sites = $('article#sites')
+
   function initSites () {
-    var $toc = $('select#toc')
-    var $sites = $('article#sites')
     $.getJSON('json/sites.json')
     .success(function (data) {
       $sites.html('')
@@ -39,6 +40,11 @@ $(function ($) {
     throttle: 300,      // millisecond interval at which to process events
     threshold: 100,     // scroll distance from element before its loaded
     live: true          // auto bind lazy loading to ajax loaded elements
+  })
+
+  $toc.on('change', function () {
+    var name = $toc.find(':selected').attr('name')
+    window.location.href = '#' + name
   })
 
   initSites()
