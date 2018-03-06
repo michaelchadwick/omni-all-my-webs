@@ -69,6 +69,10 @@ iframe {
   opacity: 1;
 }
 
+.ssl {
+  border-color: green;
+}
+
 h1 {
   margin: 0.3em 0;
 }
