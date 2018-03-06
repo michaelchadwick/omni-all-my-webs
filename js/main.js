@@ -12,7 +12,6 @@ $(function ($) {
         $.each(data, function (k, v) {
           if (v.url.indexOf('https') >= 0) {
             extraClass = 'ssl'
-            console.log(`${v.url} has https`)
           } else {
             extraClass = ''
           }
