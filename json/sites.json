@@ -1,98 +1,122 @@
 [
   {
     "name": "Audiohash",
-    "url":  "https://audiohash.codana.me"
+    "url":  "https://audiohash.codana.me",
+    "blurb": "Make a mix of multiple songs"
   },
 	{
 		"name": "Blazz",
-		"url":  "https://blazz.nebyoolae.com"
+    "url":  "https://blazz.nebyoolae.com",
+    "blurb": "Blues. Jazz. Blazz."
 	},
   {
 		"name": "BLink Search",
-		"url":  "https://blink.codana.me"
+    "url":  "https://blink.codana.me",
+    "blurb": "Search UC San Diego."
 	},
   {
-    "name": "Codana.me Dev Blog",
-    "url":  "https://codana.me"
+    "name": "Codana.me",
+    "url":  "https://codana.me",
+    "blurb": "Development blog."
   },
   {
     "name": "Fake Monster Movie Generator",
-    "url":  "https://fmm.codana.me"
+    "url":  "https://fmm.codana.me",
+    "blurb": "Create a random fake monster movie title."
   },
   {
     "name": "Games Dev Portfolio",
-    "url":  "https://games.codana.me"
+    "url":  "https://games.codana.me",
+    "blurb": "Some games I've made."
   },
   {
     "name": "Gem Warrior",
-    "url":  "https://gw.codana.me"
+    "url":  "https://gw.codana.me",
+    "blurb": "A (not-quite-so) simple (anymore) text RPG/adventure."
   },
   {
     "name": "Gem Warrior (HTML5)",
-    "url":  "https://gw-web.codana.me"
+    "url":  "https://gw-web.codana.me",
+    "blurb": "Gem Warrior, except in HTML5, and about 0.1% done."
   },
   {
     "name": "Is Dave Still With Us?",
-    "url":  "https://dave.codana.me"
+    "url":  "https://dave.codana.me",
+    "blurb": "Testing out a web API."
   },
   {
     "name": "Just Pick One",
-    "url":  "https://jpo.codana.me"
+    "url":  "https://jpo.codana.me",
+    "blurb": "Can't choose a thing from a group of things? Push the button."
   },
   {
     "name": "Man Cave Jam",
-    "url":  "https://mcj.nebyoolae.com"
+    "url":  "https://mcj.nebyoolae.com",
+    "blurb": "The recordings of a rocked out garage."
   },
   {
     "name": "Math",
-    "url":  "https://math.codana.me"
+    "url":  "https://math.codana.me",
+    "blurb": "Practice yours maths."
   },
   {
     "name": "Michael Chadwick Info",
-    "url":  "https://michaelchadwick.info"
+    "url":  "https://michaelchadwick.info",
+    "blurb": "All you'd ever want to know about my online doings."
   },
   {
     "name": "Nebyoolae",
-    "url":  "http://nebyoolae.com"
+    "url":  "http://nebyoolae.com",
+    "blurb": "Full albums of music that I've done."
   },
   {
-    "name": "Nebyoolae Blog",
-    "url":  "https://blog.nebyoolae.com"
+    "name": "NebyooBlog",
+    "url":  "https://blog.nebyoolae.com",
+    "blurb": "Music composition and recording blog."
   },
   {
     "name": "Nebyoolae Music",
-    "url":  "https://music.nebyoolae.com"
+    "url":  "https://music.nebyoolae.com",
+    "blurb": "My attempt to recreate Bandcamp for one."
   },
   {
     "name": "Puppy Bongos",
-    "url":  "https://puppybongos.wordpress.com"
+    "url":  "https://puppybongos.wordpress.com",
+    "blurb": "A software development collective that can keep the beat."
   },
   {
     "name": "Pure Yellow Colour",
-    "url":  "https://pyc.nebyoolae.com"
+    "url":  "https://pyc.nebyoolae.com",
+    "blurb": "Old band site."
   },
   {
     "name": "Quibblings Podcast",
-    "url":  "https://quibblings.nebyoolae.com"
+    "url":  "https://quibblings.nebyoolae.com",
+    "blurb": "Podcast featuring three dudes discussing trivial things in a legitimate manner."
   },
   {
     "name": "Raffler",
-    "url":  "https://raffler.win"
+    "url":  "https://raffler.win",
+    "blurb": "Just Pick One, but better."
   },
   {
     "name": "Rorasuketo OST",
-    "url":  "https://rorasuketo.win"
+    "url":  "https://rorasuketo.win",
+    "blurb": "Soundtrack to a video game."
   },
   {
     "name": "Sketchage",
-    "url":  "https://sketchage.codana.me"
+    "url":  "https://sketchage.codana.me",
+    "blurb": "Online drawing application."
   },
   {
     "name": "Standing Desk App",
-    "url":  "http://sda.codana.me"
+    "url":  "http://sda.codana.me",
+    "blurb": "Standing desk application for OSX."
   },
   {
     "name": "The Escort Mission Podcast",
-    "url":  "https://tem.nebyoolae.com"
+    "url":  "https://tem.nebyoolae.com",
+    "blurb": "Podcast featuring three dudes discussing video games, movies, music, and other geek stuff."
   }
 ]

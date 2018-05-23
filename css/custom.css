@@ -21,6 +21,19 @@ section {
   margin: 0;
   width: 100%;
 }
+section.ssl > * {
+  border-color: #227421;
+}
+section .site-header.ssl {
+  background-color: #75c074;
+}
+section .site-blurb {
+  background-color: #ebd5af;
+  padding: 0 10px;
+}
+section .site-blurb.ssl {
+  background-color: #99db98;
+}
 
 @media (min-width: 1030px) {
   section {
@@ -67,10 +80,6 @@ iframe {
 
 .lazy-loaded {
   opacity: 1;
-}
-
-.ssl {
-  border-color: green;
 }
 
 h1 {
