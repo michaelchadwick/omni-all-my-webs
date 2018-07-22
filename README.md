@@ -4,7 +4,7 @@ A simple way to show a bunch of websites on a one-pager. I use it at [http://omn
 
 In order to use this web app yourself, just create a `json/sites.json` file under the root in the following manner:
 
-```
+```json
 { "sites": [
   {
     "name": "Website Name 1",
