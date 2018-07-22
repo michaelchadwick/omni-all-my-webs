@@ -5,7 +5,7 @@ $(function ($) {
   var extraClass = ''
 
   function initSites () {
-    $.getJSON('json/sites.json')
+    $.getJSON('assets/json/sites.json')
       .success(function (data) {
         $sites.html('')
         // <article>
