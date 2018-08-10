@@ -4,25 +4,10 @@
     "url":  "https://audiohash.codana.me",
     "blurb": "Make a mix of multiple songs"
   },
-	{
-		"name": "Blazz",
-    "url":  "https://blazz.nebyoolae.com",
-    "blurb": "Blues. Jazz. Blazz."
-	},
-  {
-		"name": "BLink Search",
-    "url":  "https://blink.codana.me",
-    "blurb": "Search UC San Diego."
-	},
   {
     "name": "Codana.me",
     "url":  "https://codana.me",
     "blurb": "Development blog."
-  },
-  {
-    "name": "Fake Monster Movie Generator",
-    "url":  "https://fmm.codana.me",
-    "blurb": "Create a random fake monster movie title."
   },
   {
     "name": "Games Dev Portfolio",
@@ -45,19 +30,9 @@
     "blurb": "Testing out a web API."
   },
   {
-    "name": "Just Pick One",
-    "url":  "https://jpo.codana.me",
-    "blurb": "Can't choose a thing from a group of things? Push the button."
-  },
-  {
     "name": "Man Cave Jam",
     "url":  "https://mcj.nebyoolae.com",
     "blurb": "The recordings of a rocked out garage."
-  },
-  {
-    "name": "Math",
-    "url":  "https://math.codana.me",
-    "blurb": "Practice yours maths."
   },
   {
     "name": "Michael Chadwick Info",
@@ -103,11 +78,6 @@
     "name": "Rorasuketo OST",
     "url":  "https://rorasuketo.win",
     "blurb": "Soundtrack to a video game."
-  },
-  {
-    "name": "Sketchage",
-    "url":  "https://sketchage.codana.me",
-    "blurb": "Online drawing application."
   },
   {
     "name": "Standing Desk App",
