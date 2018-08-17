@@ -5,13 +5,23 @@
     "blurb": "Make a mix of multiple songs"
   },
   {
+    "name": "BLink Lookup",
+    "url":  "https://codana.me/blink",
+    "blurb": "Search UC San Diego."
+  },
+  {
     "name": "Codana.me",
     "url":  "https://codana.me",
     "blurb": "Development blog."
   },
   {
+    "name": "Fake Monster Movie Title Maker",
+    "url":  "https://codana.me/fmm",
+    "blurb": "Some games I've made."
+  },
+  {
     "name": "Games Dev Portfolio",
-    "url":  "https://games.codana.me",
+    "url":  "https://codana.me/games",
     "blurb": "Some games I've made."
   },
   {
@@ -30,9 +40,19 @@
     "blurb": "Testing out a web API."
   },
   {
+    "name": "Just Pick One",
+    "url":  "https://codana.me/jpo",
+    "blurb": "Make a decision."
+  },
+  {
     "name": "Man Cave Jam",
     "url":  "https://mcj.nebyoolae.com",
     "blurb": "The recordings of a rocked out garage."
+  },
+  {
+    "name": "Math",
+    "url":  "https://codana.me/math",
+    "blurb": "Practice makes perfect."
   },
   {
     "name": "Michael Chadwick Info",
@@ -71,13 +91,18 @@
   },
   {
     "name": "Raffler",
-    "url":  "https://raffler.codana.me",
+    "url":  "https://codana.me/raffler",
     "blurb": "Just Pick One, but better."
   },
   {
     "name": "Rorasuketo OST",
     "url":  "https://rorasuketo.win",
     "blurb": "Soundtrack to a video game."
+  },
+  {
+    "name": "Sketchage",
+    "url":  "https://codana.me/sketchage",
+    "blurb": "Draw something."
   },
   {
     "name": "Standing Desk App",
