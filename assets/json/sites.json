@@ -25,16 +25,6 @@
     "blurb": "Some games I've made."
   },
   {
-    "name": "Gem Warrior",
-    "url":  "https://gw.codana.me",
-    "blurb": "A (not-quite-so) simple (anymore) text RPG/adventure."
-  },
-  {
-    "name": "Gem Warrior (HTML5)",
-    "url":  "https://gw-web.codana.me",
-    "blurb": "Gem Warrior, except in HTML5, and about 0.1% done."
-  },
-  {
     "name": "Is Dave Still With Us?",
     "url":  "https://dave.codana.me",
     "blurb": "Testing out a web API."
