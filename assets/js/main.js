@@ -10,10 +10,12 @@ $(function ($) {
         $sites.html('')
         // <article>
         $.each(data, function (k, v) {
-          if (v.url.indexOf('https') >= 0) {
-            extraClass = 'ssl'
+          if (v.archived) {
+            extraClass = 'archived'
+            extraTitle = ' (Archived)'
           } else {
             extraClass = ''
+            extraTitle = ''
           }
           $toc.append(
             `<option name='${v.name.replace(/\s/g, '').toLowerCase()}'>${v.name}</option>`
@@ -21,13 +23,13 @@ $(function ($) {
           var html = ''
           html += `<a name='${v.name.replace(/\s/g, '').toLowerCase()}'></a>`
           html += `<section class="${extraClass}" id='site-${v.name.replace(/\s/g, '').toLowerCase()}'>`
-          html += `  <h2 class='site-header ${extraClass}'>${v.name}</h2>`
+          html += `  <h2 class='site-header ${extraClass}'>${v.name}${extraTitle}</h2>`
           html += `  <h3 class='site-blurb ${extraClass}'>${v.blurb}</h3>`
           html += `  <h3 class='site-link'>`
           html += `    <a href='${v.url}' target='_blank'>${v.url}</a>`
           html += `  </h3>`
           html += `  <div class='iframe-frame'>`
-          html += `    <iframe id='iframe-${v.name.replace(/\s/g, '').toLowerCase()}' data-src='${v.url}' height='200'></iframe>`
+          html += `    <iframe id='iframe-${v.name.replace(/\s/g, '').toLowerCase()}' data-src='${v.url}' height='300'></iframe>`
           html += `  </div>`
           html += `</section>`
           $sites.append(html)

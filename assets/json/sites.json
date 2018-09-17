@@ -2,7 +2,7 @@
   {
     "name": "Audiohash",
     "url":  "https://audiohash.codana.me",
-    "blurb": "Make a mix of multiple songs"
+    "blurb": "Make a mix of multiple songs."
   },
   {
     "name": "BLink Lookup",
@@ -70,19 +70,21 @@
     "blurb": "A software development collective that can keep the beat."
   },
   {
-    "name": "Pure Yellow Colour (Archived)",
+    "name": "Pure Yellow Colour",
     "url":  "https://pyc.nebyoolae.com",
-    "blurb": "Old band site."
+    "blurb": "Old band site.",
+    "archived": true
   },
   {
-    "name": "Quibblings Podcast (Archived)",
+    "name": "Quibblings Podcast",
     "url":  "https://quibblings.nebyoolae.com",
-    "blurb": "Three dudes discussing trivial things in a legitimate manner."
+    "blurb": "Three dudes discussing trivial things in a legitimate manner.",
+    "archived": true
   },
   {
     "name": "Raffler",
     "url":  "https://codana.me/raffler",
-    "blurb": "Just Pick One, but better."
+    "blurb": "Like <a href='https://codana.me/jpo'>Just Pick One</a>, but better."
   },
   {
     "name": "Rorasuketo OST",
@@ -100,8 +102,9 @@
     "blurb": "Standing desk application for OSX."
   },
   {
-    "name": "The Escort Mission Podcast (Archived)",
+    "name": "The Escort Mission Podcast",
     "url":  "https://tem.nebyoolae.com",
-    "blurb": "Three dudes chatting about geek stuff."
+    "blurb": "Three dudes chatting about geek stuff.",
+    "archived": true
   }
 ]
