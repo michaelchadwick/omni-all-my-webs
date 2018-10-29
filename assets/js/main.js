@@ -1,6 +1,6 @@
 /* global $ */
 $(function ($) {
-  var $toc = $('select#toc')
+  // var $toc = $('select#toc')
   var $sites = $('article#sites')
   var extraClass = ''
 
@@ -17,9 +17,13 @@ $(function ($) {
             extraClass = ''
             extraTitle = ''
           }
+
+          /*
           $toc.append(
             `<option name='${v.name.replace(/\s/g, '').toLowerCase()}'>${v.name}</option>`
           )
+          */
+
           var html = ''
           html += `<a name='${v.name.replace(/\s/g, '').toLowerCase()}'></a>`
           html += `<section class="${extraClass}" id='site-${v.name.replace(/\s/g, '').toLowerCase()}'>`
@@ -53,10 +57,12 @@ $(function ($) {
     live: true // auto bind lazy loading to ajax loaded elements
   })
 
+  /*
   $toc.on('change', function () {
     var name = $toc.find(':selected').attr('name')
     window.location.href = '#' + name
   })
+  */
 
   initSites()
 })

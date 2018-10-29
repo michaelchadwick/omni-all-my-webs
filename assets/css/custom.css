@@ -13,7 +13,11 @@ a:hover {
 }
 
 h1 {
-  margin: 0.3em 0;
+  font-family: 'Cabin';
+  font-size: 2.5em;
+  margin: 0.1em 0 0.04em;
+  padding-left: 5px;
+  text-shadow: 1px 1px 1px #d0bc94;
 }
 
 h2,
@@ -59,11 +63,15 @@ h4 {
 .header-container {
   background: #e9e0cf;
   border-bottom: 5px solid #d0bc94;
+  height: 32px;
   margin: 0 0 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .header-container .wrapper {
-  margin: 0 2%;
+  margin: 0;
 }
 
 .header-container .wrapper .title {
@@ -71,7 +79,10 @@ h4 {
 }
 
 .main-container {
+  margin-bottom: 50px;
   padding: 0;
+  position: relative;
+  top: 50px;
 }
 
 .main-container .wrapper,
@@ -93,6 +104,13 @@ h4 {
   width: 100%;
 }
 
+.wrapper {
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
 #toc {
   margin: 0 30px 10px 0;
   width: auto;
@@ -111,7 +129,7 @@ article {
 
 section {
   float: none;
-  margin: 0 15px;
+  margin: 0 10px;
   width: auto;
 }
 section.archived {
@@ -121,20 +139,20 @@ section .site-header {
   background: none;
   border: 0;
   color: #5a492a;
-  padding: 3px 5px 2px;
+  padding: 3px 5px 0;
 }
 section .site-blurb {
   background: none;
   border: 0;
   color: #6d5220;
   line-height: 1.3;
-  padding: 3px 5px 2px;
+  padding: 0 5px;
 }
 section .site-link {
   background: none;
   border: 0;
   display: block;
-  padding: 1px 5px 2px;
+  padding: 0 5px 2px;
 }
 
 @media (min-width: 1030px) {
@@ -176,11 +194,14 @@ iframe {
 .footer-container {
   background: #e9e0cf;
   border-top: 5px solid #d0bc94;
+  bottom: 0;
+  color: #8d6f0d;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
   margin: 0;
   padding: 10px 0;
-}
-
-.footer-container footer {
-  color: #8d6f0d;
-  padding: 0 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
