@@ -1,6 +1,6 @@
 # Omni (All My Webs)
 
-A simple way to show a bunch of websites on a one-pager. I use it at [http://omni.codana.me](http://omni.codana.me) to display all of the websites I'm currently working on (at the very least made the design). It uses [Recliner.js](http://sourcey.com/recliner/) for lazy-loading the iframes, and [Initializr](http://www.initializr.com), naturally, for the responsive site itself.
+A simple way to show a bunch of websites on a one-pager. It uses [Recliner.js](http://sourcey.com/recliner/) for lazy-loading the iframes, and [Initializr](http://www.initializr.com), naturally, for the responsive site itself.
 
 In order to use this web app yourself, just create a `json/sites.json` file under the root in the following manner:
 
