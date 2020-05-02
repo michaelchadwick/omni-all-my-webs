@@ -133,7 +133,7 @@ section {
   width: auto;
 }
 section.archived {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 section .site-header {
   background: none;
