@@ -15,11 +15,6 @@
     "blurb": "Development blog."
   },
   {
-    "name": "Fake Monster Movie Title Maker",
-    "url":  "https://codana.me/fmm",
-    "blurb": "Let's go to a fake word salad movie."
-  },
-  {
     "name": "Games Dev Portfolio",
     "url":  "https://codana.me/games",
     "blurb": "Some games I've made."
@@ -30,19 +25,9 @@
     "blurb": "Testing out a web API."
   },
   {
-    "name": "Just Pick One",
-    "url":  "https://codana.me/jpo",
-    "blurb": "Make a decision."
-  },
-  {
     "name": "Man Cave Jam",
     "url":  "https://mcj.nebyoolae.com",
     "blurb": "The recordings of a rocked out garage."
-  },
-  {
-    "name": "Math",
-    "url":  "https://codana.me/math",
-    "blurb": "Practice makes perfect."
   },
   {
     "name": "Michael Chadwick Info",
@@ -84,7 +69,7 @@
   {
     "name": "Raffler",
     "url":  "https://raffler.me",
-    "blurb": "Like <a href='https://codana.me/jpo'>Just Pick One</a>, but better."
+    "blurb": "You need a random pick from several choices? This is your site."
   },
   {
     "name": "Rorasuketo OST",
