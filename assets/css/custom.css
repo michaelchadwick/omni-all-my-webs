@@ -1,3 +1,4 @@
+/* standard html tags */
 body {
   background: #f6f2ea;
   font: 16px/26px Consolas, Arial, sans-serif;
@@ -22,16 +23,16 @@ h1 {
 
 h2,
 h3 {
-  border: 2px solid #111;
-  border-bottom: none;
-  margin: 0;
+  border-left: none;
+  border-right: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   h2,
   h3 {
-    border-left: none;
-    border-right: none;
+    border: 2px solid #111;
+    border-bottom: none;
+    margin: 0;
   }
 }
 
@@ -50,14 +51,103 @@ h4 {
   margin: 0;
 }
 
-.lazy-loading {
-  background: #000;
-  opacity: 0.5;
+iframe {
+  background: #fff;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity 0.333s ease-in;
   width: 100%;
 }
 
-.lazy-loaded {
-  opacity: 1;
+.iframe-frame {
+  -moz-box-shadow: 0 5px 10px #c0a574;
+  -webkit-box-shadow: 0 5px 10px #c0a574;
+  border: 0;
+  box-shadow: 0 5px 10px #c0a574;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+}
+
+article {
+  padding: 0;
+}
+
+article#sites-current {
+  box-shadow: 0 5px 10px #999;
+}
+
+article#sites-archived {
+  background: #ddd8ce;
+  border-top: 3px solid #c0a574;
+  height: 415px;
+}
+
+section {
+  float: none;
+  margin: 0 10px;
+  min-height: 350px;
+  width: auto;
+}
+
+section.archived {
+  opacity: 0.3;
+}
+
+section .site-inner {
+  padding: 10px;
+}
+
+section .site-inner .site-header {
+  background: none;
+  border: 0;
+  color: #5a492a;
+  padding: 0;
+}
+
+section .site-inner .site-blurb {
+  background: none;
+  border: 0;
+  color: #6d5220;
+  line-height: 1.3;
+  padding: 0;
+}
+
+section .site-inner .site-link {
+  background: none;
+  border: 0;
+  display: block;
+  padding: 0;
+}
+
+@media (min-width: 1030px) {
+  section {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+
+  section.archived {
+    width: 33%;
+  }
+}
+
+@media (min-width: 768px) {
+  iframe.iframe-frame {
+    border: 2px solid #111;
+  }
+}
+
+/* custom classes */
+.wrapper {
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .header-container {
@@ -82,112 +172,24 @@ h4 {
   margin-bottom: 50px;
   padding: 0;
   position: relative;
-  top: 50px;
+  top: 36px;
 }
 
 .main-container .wrapper,
 .main-container .main {
-  margin: 0 auto;
-  padding: 2px 0;
-  width: 97%;
+  width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .main-container .wrapper,
   .main-container .main {
-    width: 97%;
+    margin: 0 auto;
+    padding: 2px 0;
   }
 }
 
 .main-container .wrapper article {
   margin: 0 auto;
-  width: 100%;
-}
-
-.wrapper {
-  margin: 0;
-  min-height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-#toc {
-  margin: 0 30px 10px 0;
-  width: auto;
-}
-
-@media (max-width: 768px) {
-  #toc {
-    margin: 0 30px 10px 0;
-    width: 100%;
-  }
-}
-
-article {
-  padding: 0;
-}
-
-section {
-  float: none;
-  margin: 0 10px;
-  width: auto;
-}
-section.archived {
-  opacity: 0.3;
-}
-section .site-header {
-  background: none;
-  border: 0;
-  color: #5a492a;
-  padding: 3px 5px 0;
-}
-section .site-blurb {
-  background: none;
-  border: 0;
-  color: #6d5220;
-  line-height: 1.3;
-  padding: 0 5px;
-}
-section .site-link {
-  background: none;
-  border: 0;
-  display: block;
-  padding: 0 5px 2px;
-}
-
-@media (min-width: 1030px) {
-  section {
-    float: left;
-    margin: auto 5px auto 0;
-    width: 49%;
-  }
-}
-
-.iframe-frame {
-  -moz-box-shadow: 0 5px 10px #c0a574;
-  -webkit-box-shadow: 0 5px 10px #c0a574;
-  border: 0;
-  box-shadow: 0 5px 10px #c0a574;
-  height: 300px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  padding: 0;
-  pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  .iframe-frame {
-    border: 2px solid #111;
-  }
-}
-
-iframe {
-  background: #fff;
-  border: 0;
-  opacity: 0;
-  overflow: hidden;
-  pointer-events: none;
-  transition: opacity 0.333s ease-in;
   width: 100%;
 }
 
@@ -200,8 +202,18 @@ iframe {
   font-size: 0.9em;
   letter-spacing: 0.01em;
   margin: 0;
-  padding: 10px 0;
+  padding: 11px 0;
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+.lazy-loading {
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.lazy-loaded {
+  opacity: 1;
 }

@@ -1,95 +1,92 @@
-[
-  {
-    "name": "Audiohash",
-    "url":  "https://codana.me/audiohash",
-    "blurb": "Make a mix of multiple songs."
-  },
-  {
-    "name": "BLink Lookup",
-    "url":  "https://codana.me/blink",
-    "blurb": "Search UC San Diego."
-  },
-  {
-    "name": "Codana.me",
-    "url":  "https://codana.me",
-    "blurb": "Development blog."
-  },
-  {
-    "name": "Games Dev Portfolio",
-    "url":  "https://codana.me/games",
-    "blurb": "Some games I've made."
-  },
-  {
-    "name": "Is Dave Still With Us?",
-    "url":  "https://dave.codana.me",
-    "blurb": "Testing out a web API."
-  },
-  {
-    "name": "Man Cave Jam",
-    "url":  "https://mcj.nebyoolae.com",
-    "blurb": "The recordings of a rocked out garage."
-  },
-  {
-    "name": "Michael Chadwick Info",
-    "url":  "https://michaelchadwick.info",
-    "blurb": "All you'd ever want to know about my online doings."
-  },
-  {
-    "name": "Nebyoolae",
-    "url":  "https://nebyoolae.bandcamp.com",
-    "blurb": "Full albums of music that I've done."
-  },
-  {
-    "name": "NebyooBlog",
-    "url":  "https://blog.nebyoolae.com",
-    "blurb": "Music composition and recording blog."
-  },
-  {
-    "name": "Nebyoolae Music",
-    "url":  "https://music.nebyoolae.com",
-    "blurb": "My attempt to recreate Bandcamp for one."
-  },
-  {
-    "name": "Puppy Bongos",
-    "url":  "https://puppybongos.wordpress.com",
-    "blurb": "A software development collective that can keep the beat."
-  },
-  {
-    "name": "Pure Yellow Colour",
-    "url":  "https://pyc.nebyoolae.com",
-    "blurb": "Old band site.",
-    "archived": true
-  },
-  {
-    "name": "Quibblings Podcast",
-    "url":  "https://quibblings.nebyoolae.com",
-    "blurb": "Three dudes discussing trivial things in a legitimate manner.",
-    "archived": true
-  },
-  {
-    "name": "Raffler",
-    "url":  "https://raffler.me",
-    "blurb": "You need a random pick from several choices? This is your site."
-  },
-  {
-    "name": "Rorasuketo OST",
-    "url":  "https://rorasuketo.nebyoolae.com",
-    "blurb": "Soundtrack to a video game."
-  },
-  {
-    "name": "Sketchage",
-    "url":  "https://codana.me/sketchage",
-    "blurb": "Draw something."
-  },
-  {
-    "name": "Standing Desk App",
-    "url":  "https://sda.codana.me",
-    "blurb": "Standing desk application for OSX."
-  },
-  {
-    "name": "The Escort Mission Podcast",
-    "url":  "https://tem.nebyoolae.com",
-    "blurb": "Three dudes chatting about geek stuff.",
-    "archived": true
-  }
-]
+{
+  "current":
+  [
+    {
+      "name": "Audiohash",
+      "url":  "https://codana.me/audiohash",
+      "blurb": "Make a mix of multiple songs."
+    },
+    {
+      "name": "BLink Lookup",
+      "url":  "https://codana.me/blink",
+      "blurb": "Search UC San Diego."
+    },
+    {
+      "name": "Codana.me",
+      "url":  "https://codana.me",
+      "blurb": "Development blog."
+    },
+    {
+      "name": "Games Dev Portfolio",
+      "url":  "https://codana.me/games",
+      "blurb": "Some games I've made."
+    },
+    {
+      "name": "Is Dave Still With Us?",
+      "url":  "https://dave.codana.me",
+      "blurb": "Testing out a web API."
+    },
+    {
+      "name": "Man Cave Jam",
+      "url":  "https://mcj.nebyoolae.com",
+      "blurb": "The recordings of a rocked out garage."
+    },
+    {
+      "name": "Michael Chadwick Info",
+      "url":  "https://michaelchadwick.info",
+      "blurb": "All you'd ever want to know about my online doings."
+    },
+    {
+      "name": "Nebyoolae",
+      "url":  "https://nebyoolae.bandcamp.com",
+      "blurb": "Full albums of music that I've done."
+    },
+    {
+      "name": "NebyooBlog",
+      "url":  "https://blog.nebyoolae.com",
+      "blurb": "Music composition and recording blog."
+    },
+    {
+      "name": "Nebyoolae Music",
+      "url":  "https://music.nebyoolae.com",
+      "blurb": "My attempt to recreate Bandcamp for one."
+    },
+    {
+      "name": "Puppy Bongos",
+      "url":  "https://puppybongos.wordpress.com",
+      "blurb": "A software development collective that can keep the beat."
+    },
+    {
+      "name": "Raffler",
+      "url":  "https://raffler.me",
+      "blurb": "You need a random pick from several choices? This is your site."
+    },
+    {
+      "name": "Rorasuketo OST",
+      "url":  "https://rorasuketo.nebyoolae.com",
+      "blurb": "Soundtrack to a video game."
+    },
+    {
+      "name": "Sketchage",
+      "url":  "https://codana.me/sketchage",
+      "blurb": "Draw something."
+    }
+  ],
+  "archived": [
+    {
+      "name": "Pure Yellow Colour",
+      "url":  "https://pyc.nebyoolae.com",
+      "blurb": "Old band site."
+    },
+    {
+      "name": "Quibblings Podcast",
+      "url":  "https://quibblings.nebyoolae.com",
+      "blurb": "Dudes discussing trivial things in a legitimate manner."
+    },
+    {
+      "name": "The Escort Mission Podcast",
+      "url":  "https://tem.nebyoolae.com",
+      "blurb": "Three dudes chatting about geek stuff."
+    }
+  ]
+}

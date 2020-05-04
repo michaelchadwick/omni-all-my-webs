@@ -21,28 +21,32 @@
   <link href='https://fonts.googleapis.com/css?family=Cabin|Overpass+Mono' rel='stylesheet'>
 </head>
 <body>
+  <!-- START #header-container -->
   <div class="header-container">
     <header class="wrapper clearfix">
       <h1>All My Webs</h1>
     </header>
-  </div><!-- #header-container -->
+  </div><!-- END #header-container -->
 
+  <!-- START #header-container -->
   <div class="main-container">
     <div class="main wrapper clearfix">
-      <!--
-        <select id="toc">
-          <option selected name="">- choose a site -
-        </select>
-      -->
-      <article id="sites">Loading sites...</article>
-    </div> <!-- #main -->
-  </div> <!-- #main-container -->
+      <article id="sites-current">
+        Loading sites...
+      </article>
 
+      <article id="sites-archived">
+        Loading sites...
+      </article>
+    </div> <!-- .main -->
+  </div> <!-- END #main-container -->
+
+  <!-- START #footer-container -->
   <div class="footer-container">
     <footer class="wrapper">
       a <a href="https://codana.me">codana.me</a> project by <a href="https://michaelchadwick.info">michael chadwick</a> | <a href="https://github.com/michaelchadwick/omni.codana.me">source</a>
     </footer>
-  </div><!-- footer-container -->
+  </div><!-- END #footer-container -->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-2.1.4.min.js"><\/script>')</script>

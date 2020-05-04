@@ -1,0 +1,8 @@
+{
+  "parserOptions": {
+    "ecmaversion": 6
+  },
+  "rules": {
+    "max-statements": 0
+  }
+}
