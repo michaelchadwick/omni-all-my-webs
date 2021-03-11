@@ -22,7 +22,12 @@
     if (cl !== '') site_blurb.classList.add(cl)
     site_blurb.innerHTML = v.blurb
 
-    var site_link = document.createElement('h3')
+    var site_tech = document.createElement('h4')
+    site_tech.classList.add('site-tech')
+    if (cl !== '') site_tech.classList.add(cl)
+    site_tech.innerHTML = v.tech
+
+    var site_link = document.createElement('h5')
     site_link.classList.add('site-link')
     var site_link_anchor = document.createElement('a')
     site_link_anchor.href = v.url
@@ -46,6 +51,7 @@
 
     section_inner.append(site_header)
     section_inner.append(site_blurb)
+    section_inner.append(site_tech)
     section_inner.append(site_link)
     section_inner.append(site_iframe_frame)
 
@@ -78,7 +84,9 @@
       // </article>
 
       // figure out height of <article>
-      $current.height(article_height * 0.584)
+      var height_mod = 0.584;
+      height_mod = 0.615;
+      $current.height(article_height * height_mod)
     })
     .error(function (e) {
       if (e.status === 404) {
