@@ -86,7 +86,11 @@
       // figure out height of <article>
       var height_mod = 0.584;
       height_mod = 0.615;
-      $current.height(article_height * height_mod)
+      if (window.innerWidth >= 1030) {
+        $current.height(article_height * height_mod)
+      } else {
+        $current.height('auto')
+      }
     })
     .error(function (e) {
       if (e.status === 404) {
@@ -103,5 +107,26 @@
     throttle: 300, // millisecond interval at which to process events
     threshold: 100, // scroll distance from element before its loaded
     live: true // auto bind lazy loading to ajax loaded elements
+  })
+
+  $(window).on('resize', function() {
+    var $current = $('article#sites-current')
+
+    if (window.innerWidth < 1030) {
+      $current.height('auto')
+    } else {
+      var article_height = 0
+      // <article id='sites-current'>
+      $current.each(() => {
+        article_height += 350
+      })
+      // </article>
+
+      // figure out height of <article>
+      var height_mod = 0.584;
+      height_mod = 0.615;
+
+      $current.height(article_height * height_mod)
+    }
   })
 }($));
