@@ -1,6 +1,6 @@
 # Omni (All My Webs)
 
-A simple way to show a bunch of websites on a one-pager. It uses [Recliner.js](http://sourcey.com/recliner/) for lazy-loading the iframes, and [Initializr](http://www.initializr.com), naturally, for the responsive site itself.
+A simple way to show a bunch of websites on a one-pager. It uses [Recliner.js](https://sourcey.com/recliner/) for lazy-loading the iframes, and [Initializr](https://www.initializr.com), naturally, for the responsive site itself.
 
 In order to use this web app yourself, just create a `json/sites.json` file under the root in the following manner:
 
@@ -8,11 +8,11 @@ In order to use this web app yourself, just create a `json/sites.json` file unde
 { "sites": [
   {
     "name": "Website Name 1",
-    "url":  "http://website1.com"
+    "url":  "https://website1.com"
   },
   {
     "name": "Website Name 2",
-    "url":  "http://website2.com"
+    "url":  "https://website2.com"
   }
 ] }
 ```

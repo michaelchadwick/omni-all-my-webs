@@ -3,31 +3,31 @@
   [
     {
       "name": "Audiohash",
-      "url":  "https://codana.me/audiohash",
+      "url":  "https://codaname.neb.host/audiohash",
       "blurb": "Make a mix of multiple songs.",
-      "tech": "HTML, CSS, <a href='http://vanilla-js.com/'>VanillaJS</a>"
+      "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>"
     },
     {
       "name": "BLink Lookup",
-      "url":  "https://codana.me/blink",
+      "url":  "https://codaname.neb.host/blink",
       "blurb": "Search UC San Diego.",
-      "tech": "HTML, CSS, <a href='http://vanilla-js.com/'>VanillaJS</a>, <a href='https://github.com/michaelchadwick/bones'>Bones</a>"
+      "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>, <a href='https://github.com/michaelchadwick/bones'>Bones</a>"
     },
     {
       "name": "Codana.me",
-      "url":  "https://codana.me",
+      "url":  "https://codaname.neb.host",
       "blurb": "Development blog.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://jekyllrb.com'>Jekyll</a>"
     },
     {
       "name": "Games Dev Portfolio",
-      "url":  "https://codana.me/games",
+      "url":  "https://codaname.neb.host/games",
       "blurb": "Some games I've made.",
       "tech": "HTML, CSS, <a href='https://getskeleton.com'>Skeleton</a>"
     },
     {
       "name": "Is Dave Still With Us?",
-      "url":  "https://dave.codana.me",
+      "url":  "https://dave.neb.host",
       "blurb": "Testing out a web API.",
       "tech": "HTML, <a href='https://php.net'>PHP</a>"
     },
@@ -35,7 +35,7 @@
       "name": "Man Cave Jam",
       "url":  "https://mcj.nebyoolae.com",
       "blurb": "The recordings of a rocked out garage.",
-      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='http://jplayer.org'>jPlayer</a>, <a href='https://www.ramotion.com/agency/web-design/cssgrid/'>1140px CSS Grid</a>"
+      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://jplayer.org'>jPlayer</a>, <a href='https://www.ramotion.com/agency/web-design/cssgrid/'>1140px CSS Grid</a>"
     },
     {
       "name": "Michael Chadwick Info",
@@ -81,7 +81,7 @@
     },
     {
       "name": "Sketchage",
-      "url":  "https://codana.me/sketchage",
+      "url":  "https://codaname.neb.host/sketchage",
       "blurb": "Draw something.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
     }
