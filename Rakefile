@@ -1,5 +1,5 @@
 task :deploy do |t|
-  sh "git push"
+  sh "git push origin master"
   sh "rsync -auP --exclude-from='rsync-exclude.txt' . $OMNI_REMOTE"
 end
 
