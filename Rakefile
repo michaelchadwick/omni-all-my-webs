@@ -1,8 +1,6 @@
-task :deploy
-
 task :deploy do |t|
   sh "git push"
-  sh "dandelion deploy"
+  sh "rsync -auP --exclude-from='rsync-exclude.txt' . $OMNI_REMOTE"
 end
 
 task :default => [:deploy]
