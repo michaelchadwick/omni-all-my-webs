@@ -124,6 +124,14 @@
     live: true // auto bind lazy loading to ajax loaded elements
   })
 
+  $(window).on('load', function() {
+    var iframes = document.getElementsByTagName('iframe')
+    Array.from(iframes).forEach(iframe => {
+      console.log('iframe', iframe.contentWindow)
+      iframe.contentWindow.postMessage('hello from omni!', iframe.url);
+    })
+  })
+
   $(window).on('resize', function() {
     var $current = $('article#sites-current section')
 
