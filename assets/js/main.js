@@ -2,7 +2,7 @@
   function create_site(v, $article, cl = '') {
     // create anchor
     var anchor = document.createElement('a')
-    anchor.name = v.name.replace(/\s/g, '').toLowerCase()
+    anchor.setAttribute('name', v.name.replace(/\s/g, '').toLowerCase())
     $article.append(anchor)
 
     // create section
@@ -49,13 +49,20 @@
         site_iframe.id = `iframe-${v.name.replace(/\s/g, '').toLowerCase()}`
         site_iframe.setAttribute('src', v.url)
         site_iframe.height = '300'
+        site_iframe.addEventListener(
+          'load',
+          function() {
+            console.log('this.iframe loaded', this)
+            this.contentWindow.console.log = function() { /* noop */ }
+          },
+          true
+        )
 
         site_iframe_frame.append(site_iframe)
 
-    // try to stop iframed sites from actually parsing any console.logs
-    if (site_iframe.contentWindow) {
-      site_iframe.contentWindow.console.log = function() { /* nop */ };
-    }
+        // end specific iframe
+      // end inner
+    // end section
 
     section_inner.append(site_header)
     section_inner.append(site_blurb)
@@ -80,7 +87,7 @@
       var article_height = 0
       // <article id='sites-current'>
       $.each(data.current, (k, v) => {
-        create_site(v, $current);
+        create_site(v, $current)
         article_height += 350
       })
       // </article>
@@ -92,8 +99,8 @@
       // </article>
 
       // figure out height of <article>
-      var height_mod = 0.584;
-      height_mod = 0.615;
+      var height_mod = 0.615
+
       if (window.innerWidth >= 1030) {
         $current.height(article_height * height_mod)
       } else {
@@ -118,7 +125,7 @@
   })
 
   $(window).on('resize', function() {
-    var $current = $('article#sites-current')
+    var $current = $('article#sites-current section')
 
     if (window.innerWidth < 1030) {
       $current.height('auto')
@@ -131,8 +138,7 @@
       // </article>
 
       // figure out height of <article>
-      var height_mod = 0.584;
-      height_mod = 0.615;
+      var height_mod = 0.615
 
       $current.height(article_height * height_mod)
     }
