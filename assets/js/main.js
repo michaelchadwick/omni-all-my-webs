@@ -9,42 +9,50 @@
     var section = document.createElement('section')
     section.id = `site-${v.name.replace(/\s/g, '').toLowerCase()}`
     if (cl !== '') section.classList.add(cl)
-    var section_inner = document.createElement('div')
-    section_inner.classList.add('site-inner')
 
-    var site_header = document.createElement('h2')
-    site_header.classList.add('site-header')
-    if (cl !== '') site_header.classList.add(cl)
-    site_header.innerHTML = v.name
+      // create inner
+      var section_inner = document.createElement('div')
+      section_inner.classList.add('site-inner')
 
-    var site_blurb = document.createElement('h3')
-    site_blurb.classList.add('site-blurb')
-    if (cl !== '') site_blurb.classList.add(cl)
-    site_blurb.innerHTML = v.blurb
+        // e.g. SiteName
+        var site_header = document.createElement('h2')
+        site_header.classList.add('site-header')
+        if (cl !== '') site_header.classList.add(cl)
+        site_header.innerHTML = v.name
 
-    var site_tech = document.createElement('h4')
-    site_tech.classList.add('site-tech')
-    if (cl !== '') site_tech.classList.add(cl)
-    site_tech.innerHTML = v.tech
+        // e.g. Site is for awesomeness
+        var site_blurb = document.createElement('h3')
+        site_blurb.classList.add('site-blurb')
+        if (cl !== '') site_blurb.classList.add(cl)
+        site_blurb.innerHTML = v.blurb
 
-    var site_link = document.createElement('h5')
-    site_link.classList.add('site-link')
-    var site_link_anchor = document.createElement('a')
-    site_link_anchor.href = v.url
-    site_link_anchor.innerHTML = v.url
-    site_link_anchor.target = '_blank'
+        // e.g. HTML, CSS, 6502 Assembly
+        var site_tech = document.createElement('div')
+        site_tech.classList.add('site-tech')
+        if (cl !== '') site_tech.classList.add(cl)
+        site_tech.innerHTML = v.tech
 
-    site_link.append(site_link_anchor)
+        // e.g. https://cool.site
+        var site_link = document.createElement('h5')
+        site_link.classList.add('site-link')
+        var site_link_anchor = document.createElement('a')
+        site_link_anchor.href = v.url
+        site_link_anchor.innerHTML = v.url
+        site_link_anchor.target = '_blank'
 
-    var site_iframe_frame = document.createElement('div')
-    site_iframe_frame.classList.add('iframe-frame')
-    var site_iframe = document.createElement('iframe')
-    site_iframe.id = `iframe-${v.name.replace(/\s/g, '').toLowerCase()}`
-    site_iframe.setAttribute('src', v.url)
-    site_iframe.height = '300'
+        site_link.append(site_link_anchor)
 
-    site_iframe_frame.append(site_iframe)
+        // e.g. [web-screenshot-goes-here]
+        var site_iframe_frame = document.createElement('div')
+        site_iframe_frame.classList.add('iframe-frame')
+        var site_iframe = document.createElement('iframe')
+        site_iframe.id = `iframe-${v.name.replace(/\s/g, '').toLowerCase()}`
+        site_iframe.setAttribute('src', v.url)
+        site_iframe.height = '300'
 
+        site_iframe_frame.append(site_iframe)
+
+    // try to stop iframed sites from actually parsing any console.logs
     if (site_iframe.contentWindow) {
       site_iframe.contentWindow.console.log = function() { /* nop */ };
     }

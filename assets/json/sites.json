@@ -20,16 +20,16 @@
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://jekyllrb.com'>Jekyll</a>"
     },
     {
+      "name": "Dave, You Still With Us?",
+      "url":  "https://dave.neb.host",
+      "blurb": "Testing out a web API.",
+      "tech": "HTML, <a href='https://php.net'>PHP</a>"
+    },
+    {
       "name": "Games Dev Portfolio",
       "url":  "https://codaname.neb.host/games",
       "blurb": "Some games I've made.",
       "tech": "HTML, CSS, <a href='https://getskeleton.com'>Skeleton</a>"
-    },
-    {
-      "name": "Is Dave Still With Us?",
-      "url":  "https://dave.neb.host",
-      "blurb": "Testing out a web API.",
-      "tech": "HTML, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Man Cave Jam",
