@@ -53,7 +53,6 @@
           'load',
           function() {
             console.log('this.iframe loaded', this)
-            this.contentWindow.console.log = function() { /* noop */ }
           },
           true
         )
