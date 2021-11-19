@@ -33,7 +33,7 @@
     },
     {
       "name": "Man Cave Jam",
-      "url":  "https://mcj.nebyoolae.com",
+      "url":  "https://nebyoolae.com/mcj",
       "blurb": "The recordings of a rocked out garage.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://jplayer.org'>jPlayer</a>, <a href='https://www.ramotion.com/agency/web-design/cssgrid/'>1140px CSS Grid</a>"
     },
@@ -75,7 +75,7 @@
     },
     {
       "name": "Rorasuketo OST",
-      "url":  "https://rorasuketo.nebyoolae.com",
+      "url":  "https://nebyoolae.com/rora",
       "blurb": "Soundtrack to a video game.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
     },
@@ -89,19 +89,19 @@
   "archived": [
     {
       "name": "Pure Yellow Colour",
-      "url":  "https://pyc.nebyoolae.com",
+      "url":  "https://nebyoolae.com/pyc",
       "blurb": "Old band site.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Quibblings Podcast",
-      "url":  "https://quibblings.nebyoolae.com",
+      "url":  "https://nebyoolae.com/quib",
       "blurb": "Discussing trivial things in a legitimate manner.",
       "tech": "<a href='https://wordpress.org'>Wordpress</a>"
     },
     {
       "name": "The Escort Mission Podcast",
-      "url":  "https://tem.nebyoolae.com",
+      "url":  "https://nebyoolae.com/tem",
       "blurb": "Three dudes chatting about geek stuff.",
       "tech": "<a href='https://wordpress.org'>Wordpress</a>"
     }
