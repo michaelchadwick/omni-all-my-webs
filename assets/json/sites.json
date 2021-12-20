@@ -3,19 +3,19 @@
   [
     {
       "name": "Audiohash",
-      "url":  "https://codaname.neb.host/audiohash",
+      "url":  "https://neb.host/audiohash",
       "blurb": "Make a mix of multiple songs.",
       "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>"
     },
     {
       "name": "BLink Lookup",
-      "url":  "https://codaname.neb.host/blink",
+      "url":  "https://neb.host/blink",
       "blurb": "Search UC San Diego.",
       "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>, <a href='https://github.com/michaelchadwick/bones'>Bones</a>"
     },
     {
       "name": "Codaname",
-      "url":  "https://codaname.neb.host",
+      "url":  "https://neb.host/blog",
       "blurb": "Development blog.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://jekyllrb.com'>Jekyll</a>"
     },
@@ -27,7 +27,7 @@
     },
     {
       "name": "Games Dev Portfolio",
-      "url":  "https://codaname.neb.host/games",
+      "url":  "https://neb.host/games",
       "blurb": "Some games I've made.",
       "tech": "HTML, CSS, <a href='https://getskeleton.com'>Skeleton</a>"
     },
@@ -69,7 +69,7 @@
     },
     {
       "name": "Raffler",
-      "url":  "https://codaname.neb.host/raffler",
+      "url":  "https://neb.host/raffler",
       "blurb": "You need a random pick from several choices? This is your site.",
       "tech": "HTML, <a href='https://sass-lang.com'>SASS</a>, <a href='https://jquery.com'>jQuery</a>, <a href='https://jqueryui.com'>jQuery UI</a>, <a href='https://github.com/systemjs/systemjs'>SystemJS</a>"
     },
@@ -81,7 +81,7 @@
     },
     {
       "name": "Sketchage",
-      "url":  "https://codaname.neb.host/sketchage",
+      "url":  "https://neb.host/sketchage",
       "blurb": "Draw something.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
     }
