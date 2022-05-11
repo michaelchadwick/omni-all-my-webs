@@ -1,0 +1,21 @@
+{
+    "name": "Omni :: All My Webs",
+    "short_name": "Omni",
+    "icons": [
+        {
+            "src": "./assets/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "background_color": "#ffffff",
+    "description": "All my webs",
+    "display": "standalone",
+    "start_url": "https://neb.host/omni",
+    "theme_color": "#ffffff"
+}
