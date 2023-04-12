@@ -1,2 +1,4 @@
 dandelion.yml
 !assets/icons
+!assets/js
+!assets/js/vendor
