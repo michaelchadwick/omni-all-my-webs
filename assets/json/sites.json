@@ -9,7 +9,7 @@
     },
     {
       "name": "Bogdle",
-      "url":  "https://bogdle.fun",
+      "url":  "https://bogdle.neb.host",
       "blurb": "Wordle-inspired Boggle clone",
       "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>"
     },
