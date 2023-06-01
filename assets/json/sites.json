@@ -10,8 +10,8 @@
     {
       "name": "Bogdle",
       "url":  "https://bogdle.neb.host",
-      "blurb": "Wordle-inspired Boggle clone",
-      "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>"
+      "blurb": "Wordle-inspired Boggle clone.",
+      "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Carbon (Fork)",
@@ -22,13 +22,13 @@
     {
       "name": "Dave, You Still With Us?",
       "url":  "https://dave.neb.host",
-      "blurb": "Testing out a web API.",
-      "tech": "HTML, <a href='https://php.net'>PHP</a>"
+      "blurb": "Simple web API.",
+      "tech": "HTML, <a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
     },
     {
       "name": "Gem Warrior",
       "url":  "https://gw.neb.host",
-      "blurb": "Text adventure",
+      "blurb": "Text adventure.",
       "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>"
     },
     {
@@ -47,7 +47,13 @@
       "name": "Michael Chadwick Info",
       "url":  "https://michaelchadwick.info",
       "blurb": "All you'd ever want to know about my online doings.",
-      "tech": "<a href='https://jekyllrb.com'>Jekyll</a>, HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
+      "tech": "<a href='https://jekyllrb.com'>Jekyll</a>, HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
+    },
+    {
+      "name": "Nebyoodle",
+      "url":  "https://guess.nebyoolae.com",
+      "blurb": "Guess the daily Nebyoolae song.",
+      "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Nebyoolae (Bandcamp)",
@@ -83,7 +89,13 @@
       "name": "Sketchage",
       "url":  "https://sketchage.neb.host",
       "blurb": "Draw something.",
-      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
+      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
+    },
+    {
+      "name": "Soundlister",
+      "url":  "https://soundlister.neb.host",
+      "blurb": "Playlist for your audio.",
+      "tech": "HTML, CSS, <a href='https://vanilla-js.com'>VanillaJS</a>, <a href='https://php.net'>PHP</a>"
     }
   ],
   "archived": [
