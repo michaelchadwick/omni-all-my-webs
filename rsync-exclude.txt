@@ -10,3 +10,4 @@ Rakefile
 node_modules/*
 gulpfile.js
 rsync-exclude.txt
+vendor/
