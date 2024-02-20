@@ -2,4 +2,5 @@ dandelion.yml
 !assets/icons
 !assets/js
 !assets/js/vendor
+assets/json/*.private.*
 vendor
