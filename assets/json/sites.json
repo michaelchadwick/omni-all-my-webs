@@ -14,12 +14,6 @@
       "tech": "HTML, CSS, <a href='https://vanilla-js.com/'>VanillaJS</a>, <a href='https://php.net'>PHP</a>"
     },
     {
-      "name": "Carbon (Fork)",
-      "url":  "https://carbon.neb.host",
-      "blurb": "Make code pretty.",
-      "tech": "HTML, CSS, <a href='https://nextjs.org'>NextJS</a>"
-    },
-    {
       "name": "Dave, You Still With Us?",
       "url":  "https://dave.neb.host",
       "blurb": "Simple web API.",
