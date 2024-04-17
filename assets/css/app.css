@@ -48,7 +48,7 @@ h5 {
 iframe {
   background: #fff;
   border: 0;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   pointer-events: none;
   transition: opacity 0.333s ease-in;
