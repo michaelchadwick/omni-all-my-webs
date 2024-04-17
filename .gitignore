@@ -3,4 +3,5 @@ dandelion.yml
 !assets/js
 !assets/js/vendor
 assets/json/*.private.*
+assets/json/*.test.*
 vendor
