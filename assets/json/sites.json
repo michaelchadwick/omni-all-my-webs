@@ -62,12 +62,6 @@
       "tech": "HTML/CSS/JS"
     },
     {
-      "name": "Puppy Bongos",
-      "url":  "https://puppybongos.wordpress.com",
-      "blurb": "A software development collective that can keep the beat.",
-      "tech": "<a href='https://wordpress.org'>Wordpress</a>"
-    },
-    {
       "name": "Raffler",
       "url":  "https://raffler.neb.host",
       "blurb": "You need a random pick from several choices? This is your site.",
