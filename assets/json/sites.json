@@ -50,12 +50,6 @@
       "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
     },
     {
-      "name": "Nebyoolae (Bandcamp)",
-      "url":  "https://nebyoolae.bandcamp.com",
-      "blurb": "Full albums of music that I've done.",
-      "tech": "<a href='https://bandcamp.com'>Bandcamp</a>"
-    },
-    {
       "name": "Nebyoolae Music",
       "url":  "https://music.nebyoolae.com",
       "blurb": "My attempt to recreate Bandcamp for just one artist: me.",
@@ -81,7 +75,7 @@
     },
     {
       "name": "Rorasuketo OST",
-      "url":  "https://rorasketo.win",
+      "url":  "https://rorasuketo.win",
       "blurb": "Soundtrack to a video game.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
     },
