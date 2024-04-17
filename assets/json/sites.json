@@ -26,12 +26,6 @@
       "tech": "HTML/CSS/JS"
     },
     {
-      "name": "Hacking the Grepson Podcast",
-      "url":  "https://hackingthegrepson.com",
-      "blurb": "Redirect to Podbean.",
-      "tech": ""
-    },
-    {
       "name": "Keebord",
       "url":  "https://keebord.neb.host",
       "blurb": "Play piano on the web.",
@@ -47,7 +41,7 @@
       "name": "NebHost",
       "url":  "https://neb.host",
       "blurb": "Homer self-hosted instance.",
-      "tech": "<a href='https://github.com/bastienwirtz/homer'>Homer</a> (<a href='https://bulma.io/'>Bulma</a>, <a href='https://vuejs.org'>VueJS</a>"
+      "tech": "<a href='https://github.com/bastienwirtz/homer'>Homer</a> (<a href='https://bulma.io/'>Bulma</a>, <a href='https://vuejs.org'>VueJS</a>)"
     },
     {
       "name": "Nebyoodle",
