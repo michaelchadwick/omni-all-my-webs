@@ -4,6 +4,7 @@
     {
       "name": "Audiohash",
       "url":  "https://audiohash.neb.host",
+      "url2": "https://ah.neb.host",
       "blurb": "Make a mix of multiple songs.",
       "tech": "HTML/CSS/JS"
     },
@@ -28,6 +29,7 @@
     {
       "name": "Keebord",
       "url":  "https://keebord.neb.host",
+      "url2": "https://piano.neb.host",
       "blurb": "Play piano on the web.",
       "tech": "<a href='https://vuejs.org'>VueJS</a>"
     },
@@ -63,13 +65,15 @@
     },
     {
       "name": "Raffler",
-      "url":  "https://raffler.neb.host",
+      "url":  "https://raffler.fun",
+      "url2": "https://raffler.neb.host",
       "blurb": "You need a random pick from several choices? This is your site.",
       "tech": "HTML/CSS/JS"
     },
     {
       "name": "Rorasuketo OST",
       "url":  "https://rorasuketo.win",
+      "url2": "https://neb.host/audio/rora",
       "blurb": "Soundtrack to a video game.",
       "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
     },
@@ -82,6 +86,7 @@
     {
       "name": "Soundlister",
       "url":  "https://soundlister.neb.host",
+      "url2": "https://sl.neb.host",
       "blurb": "Playlist for your audio.",
       "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
     }

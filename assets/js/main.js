@@ -42,6 +42,16 @@
 
         site_link.append(site_link_anchor)
 
+        if (site.url2) {
+          var site_link_anchor2 = document.createElement('a')
+          site_link_anchor2.href = site.url2
+          site_link_anchor2.innerHTML = site.url2
+          site_link_anchor2.target = '_blank'
+
+          site_link.append(` | `)
+          site_link.append(site_link_anchor2)
+        }
+
         // e.g. [web-screenshot-goes-here]
         var site_iframe_frame = document.createElement('div')
         site_iframe_frame.classList.add('iframe-frame')
