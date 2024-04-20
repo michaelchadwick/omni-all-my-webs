@@ -59,6 +59,7 @@
         site_iframe.id = `iframe-${site.name.replace(/\s/g, '').toLowerCase()}`
         site_iframe.setAttribute('src', site.url)
         site_iframe.height = '300'
+        site_iframe.loading = 'lazy'
         site_iframe.addEventListener(
           'load',
           function() {
@@ -92,7 +93,8 @@
     $current.html('')
     $archived.html('')
 
-    var article_height = 0
+    let article_height = 0
+
     // <article id='sites-current'>
     $.each(data.current, (k, v) => {
       create_site(v, $current)
@@ -107,7 +109,7 @@
     // </article>
 
     // figure out height of <article>
-    var height_mod = 0.615
+    let height_mod = 0.615
 
     if (window.innerWidth >= 1030) {
       $current.height(article_height * height_mod)
@@ -124,14 +126,6 @@
     }
   })
 
-  // lazy load sites
-  $('section iframe').recliner({
-    attrib: 'data-src', // selector for attribute containing the media src
-    throttle: 300, // millisecond interval at which to process events
-    threshold: 100, // scroll distance from element before its loaded
-    live: true // auto bind lazy loading to ajax loaded elements
-  })
-
   $(window).on('load', function() {
   //   var iframes = document.getElementsByTagName('iframe')
   //   Array.from(iframes).forEach(iframe => {
@@ -142,12 +136,12 @@
   })
 
   $(window).on('resize', function() {
-    var $current = $('article#sites-current section')
+    const $current = $('article#sites-current section')
 
     if (window.innerWidth < 1030) {
       $current.height('auto')
     } else {
-      var article_height = 0
+      let article_height = 0
       // <article id='sites-current'>
       $current.each(() => {
         article_height += 350
@@ -155,7 +149,7 @@
       // </article>
 
       // figure out height of <article>
-      var height_mod = 0.615
+      let height_mod = 0.615
 
       $current.height(article_height * height_mod)
     }
