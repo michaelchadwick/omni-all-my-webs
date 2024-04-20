@@ -7,12 +7,18 @@ In order to use this web app yourself, just create a `json/sites.json` file unde
 ```json
 { "sites": [
   {
-    "name": "Website Name 1",
-    "url":  "https://website1.com"
+    "name":  "Website Name 1",
+    "url":   "https://website1.com",
+    "url2":  "https://web1.com",
+    "blurb": "Webby website.",
+    "tech":  "HTML/CSS/JS"
   },
   {
-    "name": "Website Name 2",
-    "url":  "https://website2.com"
+    "name":  "Website Name 2",
+    "url":   "https://website2.com",
+    "url2":  "https://web2.com",
+    "blurb": "Webbier website.",
+    "tech":  "ReactJS"
   }
 ] }
 ```
