@@ -1,41 +1,42 @@
-(function ($) {
+(async function () {
+
   function create_site(site, $article, cl = '') {
     // create anchor
-    var anchor = document.createElement('a')
+    const anchor = document.createElement('a')
     anchor.setAttribute('name', site.name.replace(/\s/g, '').toLowerCase())
     $article.append(anchor)
 
     // create section
-    var section = document.createElement('section')
+    const section = document.createElement('section')
     section.id = `site-${site.name.replace(/\s/g, '').toLowerCase()}`
     if (cl !== '') section.classList.add(cl)
 
       // create inner
-      var section_inner = document.createElement('div')
+      const section_inner = document.createElement('div')
       section_inner.classList.add('site-inner')
 
         // e.g. SiteName
-        var site_header = document.createElement('h2')
+        const site_header = document.createElement('h2')
         site_header.classList.add('site-header')
         if (cl !== '') site_header.classList.add(cl)
         site_header.innerHTML = site.name
 
         // e.g. Site is for awesomeness
-        var site_blurb = document.createElement('h3')
+        const site_blurb = document.createElement('h3')
         site_blurb.classList.add('site-blurb')
         if (cl !== '') site_blurb.classList.add(cl)
         site_blurb.innerHTML = site.blurb
 
         // e.g. HTML, CSS, 6502 Assembly
-        var site_tech = document.createElement('div')
+        const site_tech = document.createElement('div')
         site_tech.classList.add('site-tech')
         if (cl !== '') site_tech.classList.add(cl)
         site_tech.innerHTML = site.tech
 
         // e.g. https://cool.site
-        var site_link = document.createElement('h5')
+        const site_link = document.createElement('h5')
         site_link.classList.add('site-link')
-        var site_link_anchor = document.createElement('a')
+        const site_link_anchor = document.createElement('a')
         site_link_anchor.href = site.url
         site_link_anchor.innerHTML = site.url
         site_link_anchor.target = '_blank'
@@ -43,7 +44,7 @@
         site_link.append(site_link_anchor)
 
         if (site.url2) {
-          var site_link_anchor2 = document.createElement('a')
+          const site_link_anchor2 = document.createElement('a')
           site_link_anchor2.href = site.url2
           site_link_anchor2.innerHTML = site.url2
           site_link_anchor2.target = '_blank'
@@ -53,9 +54,9 @@
         }
 
         // e.g. [web-screenshot-goes-here]
-        var site_iframe_frame = document.createElement('div')
+        const site_iframe_frame = document.createElement('div')
         site_iframe_frame.classList.add('iframe-frame')
-        var site_iframe = document.createElement('iframe')
+        const site_iframe = document.createElement('iframe')
         site_iframe.id = `iframe-${site.name.replace(/\s/g, '').toLowerCase()}`
         site_iframe.setAttribute('src', site.url)
         site_iframe.height = '300'
@@ -86,64 +87,68 @@
   }
 
   // pull site creation data
-  $.getJSON('assets/json/sites.json', (data) => {
-    var $current = $('article#sites-current')
-    var $archived = $('article#sites-archived')
+  const result = await fetch('assets/json/sites.json')
+  const data = await result.json()
 
-    $current.html('')
-    $archived.html('')
+  // if (e.status === 404) {
+  //   $sites.html('<p>Error: json/sites.json is missing</p>')
+  // } else {
+  //   $sites.html('<p>Error: json/sites.json is malformed</p>')
+  //   $sites.append(`<textarea id='json' style='border: 1px solid #000; font-family: Consolas; height: 200px; width: 500px;'>${e.responseText}</textarea>`)
+  // }
 
-    let article_height = 0
+  const current = document.getElementById('sites-current')
+  const archived = document.getElementById('sites-archived')
 
-    // <article id='sites-current'>
-    $.each(data.current, (k, v) => {
-      create_site(v, $current)
-      article_height += 350
-    })
-    // </article>
+  current.innerHTML = ''
+  archived.innerHTML = ''
 
-    // <article id='sites-archived'>
-    $.each(data.archived, (k, v) => {
-      create_site(v, $archived, 'archived')
-    })
-    // </article>
+  let article_height = 0
 
-    // figure out height of <article>
-    let height_mod = 0.615
-
-    if (window.innerWidth >= 1030) {
-      $current.height(article_height * height_mod)
-    } else {
-      $current.height('auto')
-    }
+  // <article id='sites-current'>
+  data.current.forEach(v => {
+    create_site(v, current)
+    article_height += 350
   })
-  .fail(function (e) {
-    if (e.status === 404) {
-      $sites.html('<p>Error: json/sites.json is missing</p>')
-    } else {
-      $sites.html('<p>Error: json/sites.json is malformed</p>')
-      $sites.append(`<textarea id='json' style='border: 1px solid #000; font-family: Consolas; height: 200px; width: 500px;'>${e.responseText}</textarea>`)
-    }
-  })
+  // </article>
 
-  $(window).on('load', function() {
+  // <article id='sites-archived'>
+  data.archived.forEach(v => {
+    create_site(v, archived, 'archived')
+  })
+  // </article>
+
+  // figure out height of <article>
+  let height_mod = 0.615
+
+  if (window.innerWidth >= 1030) {
+    current.height = (article_height * height_mod)
+  } else {
+    current.height = 'auto'
+  }
+
+  window.onload = function() {
   //   var iframes = document.getElementsByTagName('iframe')
   //   Array.from(iframes).forEach(iframe => {
   //     console.log('iframe', iframe.contentWindow)
   //     iframe.contentWindow.postMessage('hello from omni!', iframe.url);
   //   })
     window.scrollTo(0, 0)
-  })
+  }
 
-  $(window).on('resize', function() {
-    const $current = $('article#sites-current section')
+  window.onresize = function() {
+    const current_sections = document.getElementsByTagName('article#sites-current section')
 
+    current_sections.forEach(element => {
+      
+    });
     if (window.innerWidth < 1030) {
-      $current.height('auto')
+      current.height('auto')
     } else {
       let article_height = 0
+      
       // <article id='sites-current'>
-      $current.each(() => {
+      current.each(() => {
         article_height += 350
       })
       // </article>
@@ -151,7 +156,8 @@
       // figure out height of <article>
       let height_mod = 0.615
 
-      $current.height(article_height * height_mod)
+      current.height(article_height * height_mod)
     }
-  })
-}(jQuery));
+  }
+
+}());
