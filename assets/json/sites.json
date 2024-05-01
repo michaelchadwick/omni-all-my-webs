@@ -37,7 +37,7 @@
       "name": "Michael Chadwick Info",
       "url":  "https://michaelchadwick.info",
       "blurb": "All you'd ever want to know about my online doings.",
-      "tech": "<a href='https://jekyllrb.com'>Jekyll</a>, HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
+      "tech": "<a href='https://jekyllrb.com'>Jekyll</a>, HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
     },
     {
       "name": "NebHost",
@@ -75,13 +75,13 @@
       "url":  "https://rorasuketo.win",
       "url2": "https://neb.host/audio/rora",
       "blurb": "Soundtrack to a video game.",
-      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>"
+      "tech": "<a href='https://gohugo.io'>Hugo</a>, HTML/CSS/<a href='https://jquery.com'>jQuery</a>"
     },
     {
       "name": "Sketchage",
       "url":  "https://sketchage.neb.host",
       "blurb": "Draw something.",
-      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
+      "tech": "HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Soundlister",
@@ -96,7 +96,7 @@
       "name": "Pure Yellow Colour",
       "url":  "https://neb.host/audio/pyc",
       "blurb": "Old band site.",
-      "tech": "HTML, CSS, <a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
+      "tech": "HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Quibblings Podcast",
