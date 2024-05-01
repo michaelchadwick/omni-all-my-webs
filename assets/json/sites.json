@@ -73,7 +73,6 @@
     {
       "name": "Rorasuketo OST",
       "url":  "https://rorasuketo.win",
-      "url2": "https://neb.host/audio/rora",
       "blurb": "Soundtrack to a video game.",
       "tech": "<a href='https://gohugo.io'>Hugo</a>, HTML/CSS/<a href='https://jquery.com'>jQuery</a>"
     },
