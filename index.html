@@ -1,73 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- BASIC
+  <head>
+    <!-- BASIC
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <meta http-equiv="cache-control" content="Public">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>Omni :: All My Webs :: Michael Chadwick</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="Public" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <title>Omni :: All My Webs :: Michael Chadwick</title>
 
-  <!-- META
+    <!-- META
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="description" content="All of the websites and webapps designed and/or administered by Michael Chadwick/Nebyoolae.">
-  <meta name="author" content="Michael Chadwick">
-  <meta name="application-name" content="Omni - All My Webs">
-  <meta name="title" content="Omni - All My Webs" />
-  <meta property="og:url" content="https://omni.neb.host">
-  <meta property="og:title" content="Omni - All My Webs">
-  <meta property="og:description" content="All of the websites and webapps designed and/or administered by Michael Chadwick/Nebyoolae.">
-  <meta property="og:image" content="https://omni.neb.host/assets/icons/android-chrome-512x512.png">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="omni.neb.host">
+    <meta
+      name="description"
+      content="All of the websites and webapps designed and/or administered by Michael Chadwick/Nebyoolae."
+    />
+    <meta name="author" content="Michael Chadwick" />
+    <meta name="application-name" content="Omni - All My Webs" />
+    <meta name="title" content="Omni - All My Webs" />
+    <meta property="og:url" content="https://omni.neb.host" />
+    <meta property="og:title" content="Omni - All My Webs" />
+    <meta
+      property="og:description"
+      content="All of the websites and webapps designed and/or administered by Michael Chadwick/Nebyoolae."
+    />
+    <meta
+      property="og:image"
+      content="https://omni.neb.host/assets/icons/android-chrome-512x512.png"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="omni.neb.host" />
 
-  <!-- FAVICONS
+    <!-- FAVICONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#66a8fe">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./assets/icons/safari-pinned-tab.svg" color="#66a8fe" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- FONTS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Overpass+Mono">
+    <link rel="stylesheet" href="./assets/css/vendor/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/vendor/main.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <!-- START #header-container -->
+    <div class="header-container">
+      <header class="wrapper clearfix">
+        <h1>All My Webs</h1>
+      </header>
+    </div>
+    <!-- END #header-container -->
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="./assets/css/vendor/normalize.css">
-  <link rel="stylesheet" href="./assets/css/vendor/main.css">
-  <link rel="stylesheet" href="./assets/css/app.css">
-</head>
-<body>
-  <!-- START #header-container -->
-  <div class="header-container">
-    <header class="wrapper clearfix">
-      <h1>All My Webs</h1>
-    </header>
-  </div><!-- END #header-container -->
+    <!-- START #header-container -->
+    <div class="main-container">
+      <div class="main wrapper clearfix">
+        <article id="sites-current">Loading sites...</article>
 
-  <!-- START #header-container -->
-  <div class="main-container">
-    <div class="main wrapper clearfix">
-      <article id="sites-current">
-        Loading sites...
-      </article>
+        <article id="sites-archived">Loading sites...</article>
+      </div>
+      <!-- .main -->
+    </div>
+    <!-- END #main-container -->
 
-      <article id="sites-archived">
-        Loading sites...
-      </article>
-    </div> <!-- .main -->
-  </div> <!-- END #main-container -->
+    <!-- vvv neb.host subsite footer -->
+    <footer
+      id="footer-neb-host"
+      style="
+        background: #484848;
+        border-top: 2px solid #000000;
+        bottom: 0;
+        color: #aaaaaa;
+        display: table;
+        font-family: 'Consolas', sans-serif;
+        font-size: 12px;
+        height: 18px;
+        letter-spacing: initial;
+        margin-top: 20px;
+        padding: 5px 10px;
+        position: fixed;
+        width: 100%;
+        text-align: left;
+        z-index: 2;
+      "
+    >
+      site by
+      <a
+        style="color: #ffffff; font-family: 'Consolas', sans-serif; font-size: 12px"
+        href="https://neb.host"
+        >neb.host</a
+      >
+    </footer>
+    <!-- ^^^ neb.host subsite footer -->
 
-  <!-- vvv neb.host subsite footer -->
-  <footer id="footer-neb-host" style="background: #484848; border-top: 2px solid #000000; bottom: 0; color: #aaaaaa; display: table; font-family: 'Consolas', sans-serif; font-size: 12px; height: 18px; letter-spacing: initial; margin-top: 20px; padding: 5px 10px; position: fixed; width: 100%; text-align: left; z-index: 2">site by <a style="color: #ffffff; font-family: 'Consolas', sans-serif; font-size: 12px;" href="https://neb.host">neb.host</a>
-  </footer>
-  <!-- ^^^ neb.host subsite footer -->
-
-  <!-- CUSTOM -->
-  <script src="./assets/js/main.js"></script>
+    <!-- CUSTOM -->
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
