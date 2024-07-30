@@ -64,11 +64,17 @@ h5 {
 iframe {
   background: #fff;
   border: 0;
+  height: 380px;
   opacity: 1;
   overflow: hidden;
   pointer-events: none;
   transition: opacity 0.333s ease-in;
   width: 100%;
+}
+@media (min-width: 992px) {
+  iframe {
+    height: 230px;
+  }
 }
 
 .iframe-frame {
@@ -76,11 +82,16 @@ iframe {
   -webkit-box-shadow: 0 5px 10px #c0a574;
   border: 0;
   box-shadow: 0 5px 10px #c0a574;
-  height: 300px;
+  height: 380px;
   margin-bottom: 20px;
   overflow: hidden;
   padding: 0;
   pointer-events: none;
+}
+@media (min-width: 992px) {
+  .iframe-frame {
+    height: 230px;
+  }
 }
 
 article {
@@ -94,15 +105,33 @@ article#sites-archived {
   border-top: 3px solid #c0a574;
   clear: both;
 }
+@media (min-width: 992px) {
+  article#sites-archived {
+    height: 455px;
+  }
+}
 
 section {
   float: none;
-  margin: 0 10px;
-  min-height: 350px;
+  height: 500px;
+  margin: 0;
   width: auto;
+}
+@media (min-width: 992px) {
+  section {
+    float: left;
+    height: 350px;
+    margin: 0;
+    width: 50%;
+  }
 }
 section.archived {
   opacity: 0.3;
+}
+@media (min-width: 992px) {
+  section.archived {
+    width: 33%;
+  }
 }
 section .site-inner {
   padding: 10px;
@@ -139,21 +168,6 @@ section .site-inner .site-link {
   border: 0;
   display: block;
   padding: 0;
-}
-
-@media (min-width: 1030px) {
-  article#sites-archived {
-    height: 455px;
-  }
-
-  section {
-    float: left;
-    margin: 0;
-    width: 50%;
-  }
-  section.archived {
-    width: 33%;
-  }
 }
 
 @media (min-width: 768px) {
