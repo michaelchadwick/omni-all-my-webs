@@ -20,6 +20,12 @@
       "tech": "<a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
     },
     {
+      "name": "Deckdle",
+      "url": "https://deckdle.neb.host",
+      "blurb": "Daily solitaire card game.",
+      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+    },
+    {
       "name": "Gem Warrior",
       "url": "https://gw.neb.host",
       "blurb": "Text adventure.",
