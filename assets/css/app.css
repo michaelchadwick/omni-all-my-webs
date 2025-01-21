@@ -73,7 +73,7 @@ iframe {
 }
 @media (min-width: 992px) {
   iframe {
-    height: 230px;
+    height: 300px;
   }
 }
 
