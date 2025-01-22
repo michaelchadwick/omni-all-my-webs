@@ -57,8 +57,9 @@
     site_iframe_frame.classList.add('iframe-frame')
     const site_iframe = document.createElement('iframe')
     site_iframe.id = `iframe-${site.name.replace(/\s/g, '').toLowerCase()}`
-    site_iframe.setAttribute('src', site.url)
-    site_iframe.loading = 'lazy'
+    site_iframe.setAttribute('data-src', site.url)
+    // this doesn't work because they are dynamically generated :-(
+    // site_iframe.loading = 'lazy'
     site_iframe.addEventListener(
       'load',
       function () {
@@ -82,6 +83,24 @@
     section.append(section_inner)
 
     $article.append(section)
+  }
+
+  // use Intersection Observer API to add lazy loading
+  function enable_lazy_loading() {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const iframe = entry.target
+          iframe.src = iframe.getAttribute('data-src')
+          iframe.removeAttribute('data-src')
+          obs.unobserve(iframe)
+        }
+      })
+    })
+
+    document.querySelectorAll('iframe[data-src]').forEach((iframe) => {
+      observer.observe(iframe)
+    })
   }
 
   // pull site creation data
@@ -132,6 +151,7 @@
     //     iframe.contentWindow.postMessage('hello from omni!', iframe.url);
     //   })
     window.scrollTo(0, 0)
+    enable_lazy_loading()
   }
 
   window.onresize = function () {
