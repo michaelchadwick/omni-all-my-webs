@@ -1,11 +1,23 @@
 {
   "current": [
     {
+      "name": "AOCNebHost",
+      "url": "https://aoc.neb.host",
+      "blurb": "Advent of Code solutions.",
+      "tech": "<a href='https://rubyonrails.org/'>Ruby on Rails</a>, SQLite"
+    },
+    {
       "name": "Audiohash",
       "url": "https://audiohash.neb.host",
       "url2": "https://ah.neb.host",
       "blurb": "Make a mix of multiple songs.",
       "tech": "HTML/CSS/JS"
+    },
+    {
+      "name": "BitsNebHost",
+      "url": "https://bits.neb.host",
+      "blurb": "SoundLister for my random ideas.",
+      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
     },
     {
       "name": "Bogdle",
