@@ -4,101 +4,101 @@
       "name": "AOCNebHost",
       "url": "https://aoc.neb.host",
       "blurb": "Advent of Code solutions.",
-      "tech": "<a href='https://rubyonrails.org/'>Ruby on Rails</a>, SQLite"
+      "tech": ["ruby-on-rails", "sqlite"]
     },
     {
       "name": "Audiohash",
       "url": "https://audiohash.neb.host",
       "url2": "https://ah.neb.host",
       "blurb": "Make a mix of multiple songs.",
-      "tech": "HTML/CSS/JS"
+      "tech": ["html", "css", "js"]
     },
     {
       "name": "BitsNebHost",
       "url": "https://bits.neb.host",
       "blurb": "SoundLister for my random ideas.",
-      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "php"]
     },
     {
       "name": "Bogdle",
       "url": "https://bogdle.neb.host",
       "blurb": "Wordle-inspired Boggle clone.",
-      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "php"]
     },
     {
       "name": "Dave, You Still With Us?",
       "url": "https://dave.neb.host",
       "blurb": "Simple web API.",
-      "tech": "<a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
+      "tech": ["php", "composer"]
     },
     {
       "name": "Deckdle",
       "url": "https://deckdle.neb.host",
       "blurb": "Daily solitaire card game.",
-      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "php"]
     },
     {
       "name": "Gem Warrior",
       "url": "https://gw.neb.host",
       "blurb": "Text adventure.",
-      "tech": "HTML/CSS/JS"
+      "tech": ["html", "css", "js"]
     },
     {
       "name": "Keebord",
       "url": "https://keebord.neb.host",
       "url2": "https://piano.neb.host",
       "blurb": "Play piano on the web.",
-      "tech": "<a href='https://vuejs.org'>VueJS</a>"
+      "tech": ["vue"]
     },
     {
       "name": "Michael Chadwick Info",
       "url": "https://michaelchadwick.info",
       "blurb": "All you'd ever want to know about my online doings.",
-      "tech": "<a href='https://jekyllrb.com'>Jekyll</a>, HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>, <a href='https://getcomposer.org'>Composer</a>"
+      "tech": ["jekyll", "html", "css", "js", "jquery", "php", "composer"]
     },
     {
       "name": "NebHost",
       "url": "https://neb.host",
       "blurb": "Homer self-hosted instance.",
-      "tech": "<a href='https://github.com/bastienwirtz/homer'>Homer</a> (<a href='https://bulma.io/'>Bulma</a>, <a href='https://vuejs.org'>VueJS</a>)"
+      "tech": ["bulma", "vue", "homer"]
     },
     {
       "name": "Nebyoodle",
       "url": "https://guess.nebyoolae.com",
       "blurb": "Guess the daily Nebyoolae song.",
-      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "php"]
     },
     {
       "name": "Nebyoolae Music",
       "url": "https://music.nebyoolae.com",
       "blurb": "My attempt to recreate Bandcamp for just one artist: me.",
-      "tech": "<a href='https://drupal.org'>Drupal</a>"
+      "tech": ["drupal", "mysql"]
     },
     {
       "name": "Raffler",
       "url": "https://raffler.fun",
       "url2": "https://raffler.neb.host",
       "blurb": "You need a random pick from several choices? This is your site.",
-      "tech": "HTML/CSS/JS"
+      "tech": ["html", "css", "js"]
     },
     {
       "name": "Rorasuketo OST",
       "url": "https://rorasuketo.win",
       "blurb": "Soundtrack to a video game.",
-      "tech": "<a href='https://gohugo.io'>Hugo</a>, HTML/CSS/<a href='https://jquery.com'>jQuery</a>"
+      "tech": ["html", "css", "js", "jquery", "hugo"]
     },
     {
       "name": "Sketchage",
       "url": "https://sketchage.neb.host",
       "blurb": "Draw something.",
-      "tech": "HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "jquery", "php"]
     },
     {
       "name": "Soundlister",
       "url": "https://soundlister.neb.host",
       "url2": "https://sl.neb.host",
       "blurb": "Playlist for your audio.",
-      "tech": "HTML/CSS/JS, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "php"]
     }
   ],
   "archived": [
@@ -106,19 +106,19 @@
       "name": "Pure Yellow Colour",
       "url": "https://neb.host/audio/pyc",
       "blurb": "Old band site.",
-      "tech": "HTML/CSS/<a href='https://jquery.com'>jQuery</a>, <a href='https://php.net'>PHP</a>"
+      "tech": ["html", "css", "js", "jquery", "php"]
     },
     {
       "name": "Quibblings Podcast",
       "url": "https://neb.host/podcasts/quib",
       "blurb": "Discussing trivial things in a legitimate manner.",
-      "tech": "<a href='https://wordpress.org'>Wordpress</a>"
+      "tech": ["wordpress"]
     },
     {
       "name": "The Escort Mission Podcast",
       "url": "https://neb.host/podcasts/tem",
       "blurb": "Three dudes chatting about geek stuff.",
-      "tech": "<a href='https://wordpress.org'>Wordpress</a>"
+      "tech": ["wordpress"]
     }
   ]
 }

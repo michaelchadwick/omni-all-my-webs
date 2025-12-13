@@ -6,6 +6,77 @@ const OMNI_ENV_PROD_URL = ['omni.neb.host']
 Omni.env = OMNI_ENV_PROD_URL.includes(document.location.hostname)
   ? 'prod'
   : 'local'
+
+Omni.techLinks = {
+  bulma: {
+    title: 'Bulma',
+    url: 'https://bulma.io',
+  },
+  composer: {
+    title: 'Composer',
+    url: 'https://getcomposer.org',
+  },
+  css: {
+    title: 'CSS',
+    url: 'https://www.w3.org/Style/CSS/',
+  },
+  drupal: {
+    title: 'Drupal',
+    url: 'https://drupal.org',
+  },
+  homer: {
+    title: 'Homer',
+    url: 'https://github.com/bastienwirtz/homer',
+  },
+  hugo: {
+    title: 'Hugo',
+    url: 'https://gohugo.io',
+  },
+  html: {
+    title: 'HTML',
+    url: 'https://html.spec.whatwg.org/multipage',
+  },
+  jekyll: {
+    title: 'Jekyll',
+    url: 'https://jekyllrb.com',
+  },
+  jquery: {
+    title: 'jQuery',
+    url: 'https://jquery.com',
+  },
+  js: {
+    title: 'JavaScript',
+    url: 'https://262.ecma-international.org/16.0/index.html?_gl=1*1qb02y6*_ga*MTIxNTM2Nzc2OS4xNzY1NjU1MDkw*_ga_TDCK4DWEPP*czE3NjU2NTUwODkkbzEkZzAkdDE3NjU2NTUwODkkajYwJGwwJGgw',
+  },
+  mysql: {
+    title: 'MySQL',
+    url: 'https://mysql.com',
+  },
+  node: {
+    title: 'NodeJS',
+    url: 'https://nodejs.org',
+  },
+  php: {
+    title: 'PHP',
+    url: 'https://php.net',
+  },
+  'ruby-on-rails': {
+    title: 'Ruby on Rails',
+    url: 'https://rubyonrails.org',
+  },
+  sqlite: {
+    title: 'SQLite',
+    url: 'https://sqlite.org',
+  },
+  vue: {
+    title: 'VueJS',
+    url: 'https://vuejs.org',
+  },
+  wordpress: {
+    title: 'Wordpress',
+    url: 'https://wordpress.org',
+  },
+}
 ;(async function () {
   function create_site(site, $article, cl = '') {
     // create anchor
@@ -34,11 +105,13 @@ Omni.env = OMNI_ENV_PROD_URL.includes(document.location.hostname)
     if (cl !== '') site_blurb.classList.add(cl)
     site_blurb.innerHTML = site.blurb
 
-    // e.g. HTML, CSS, 6502 Assembly
+    // e.g. HTML, CSS, Composer, 6502 Assembly
     const site_tech = document.createElement('div')
     site_tech.classList.add('site-tech')
     if (cl !== '') site_tech.classList.add(cl)
-    site_tech.innerHTML = site.tech
+    site.tech.forEach((tech) => {
+      site_tech.innerHTML += `<span class='tag ${tech}'><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
+    })
 
     // e.g. https://cool.site
     const site_link = document.createElement('h5')

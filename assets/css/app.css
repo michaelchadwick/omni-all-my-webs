@@ -113,7 +113,7 @@ article#sites-archived {
 
 section {
   float: none;
-  height: 500px;
+  height: 515px;
   margin: 0;
   width: auto;
 }
@@ -159,7 +159,6 @@ section .site-inner .site-tech {
   background: none;
   border: 0;
   color: #7e6331;
-  font-style: italic;
   line-height: 1.5;
   padding: 0;
 }
@@ -232,4 +231,140 @@ section .site-inner .site-link {
 
 .lazy-loaded {
   opacity: 1;
+}
+
+.tag {
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0.35em 0.25em 0.4em 0;
+  padding: 0.2em 0.4em;
+
+  &.bulma {
+    background-color: #5fceb3;
+
+    a {
+      color: #1f2228;
+    }
+  }
+
+  &.composer {
+    background-color: #825834;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.css {
+    background-color: #2f4ad7;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.drupal {
+    background-color: #17285c;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.homer {
+    background-color: #4066cf;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.html {
+    background-color: #cc5534;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.jekyll {
+    background-color: #333333;
+
+    a {
+      color: #f7ce46;
+    }
+  }
+
+  &.jquery {
+    background-color: #8dcdf1;
+
+    a {
+      color: #000;
+    }
+  }
+
+  &.js {
+    background-color: #ebda4e;
+
+    a {
+      color: #000;
+    }
+  }
+
+  &.hugo {
+    background-color: #b62676;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.mysql {
+    background-color: #4a6d90;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.php {
+    background-color: #525b8f;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.ruby-on-rails {
+    background-color: #bc281b;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.sqlite {
+    background-color: #5496cd;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.vue {
+    background-color: #65b687;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &.wordpress {
+    background-color: #24282d;
+
+    a {
+      color: #fff;
+    }
+  }
 }
