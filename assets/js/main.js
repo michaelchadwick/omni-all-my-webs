@@ -1,3 +1,11 @@
+// Omni object init
+if (typeof Omni === 'undefined') var Omni = {}
+
+const OMNI_ENV_PROD_URL = ['omni.neb.host']
+
+Omni.env = OMNI_ENV_PROD_URL.includes(document.location.hostname)
+  ? 'prod'
+  : 'local'
 ;(async function () {
   function create_site(site, $article, cl = '') {
     // create anchor
@@ -155,7 +163,9 @@
   }
 
   window.onresize = function () {
-    const current_sections = document.getElementsByTagName('article#sites-current section')
+    const current_sections = document.getElementsByTagName(
+      'article#sites-current section'
+    )
 
     current_sections.forEach((element) => {})
     if (window.innerWidth < 1030) {
@@ -173,6 +183,13 @@
       let height_mod = 0.615
 
       current.height(article_height * height_mod)
+    }
+  }
+
+  // if local dev, update title
+  if (Omni.env == 'local') {
+    if (!document.title.includes('(LH) ')) {
+      document.title = '(LH) ' + document.title
     }
   }
 })()
