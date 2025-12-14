@@ -73,10 +73,20 @@
     </div>
 
     <div class="main-container">
-      <div class="main wrapper clearfix">
-        <article id="sites-current">Loading sites...</article>
+      <!-- TODO: actually filter sites by filters
+      <nav id="filter">
+        <button class="change-filter active" data-keyword="all">All</button>
+      </nav>
+      -->
 
-        <article id="sites-archived">Loading sites...</article>
+      <div class="main wrapper clearfix">
+        <article id="sites-current">
+          <span class="loading">Loading sites...</span>
+        </article>
+
+        <article id="sites-archived">
+          <span class="loading">Loading sites...</span>
+        </article>
       </div>
       <!-- .main -->
     </div>

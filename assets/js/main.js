@@ -77,6 +77,12 @@ Omni.techLinks = {
     url: 'https://wordpress.org',
   },
 }
+
+// will be filled up as sites are created
+Omni.techTags = new Set([])
+
+// used to filter which sites to show
+Omni.filterList = []
 ;(async function () {
   function create_site(site, $article, cl = '') {
     // create anchor
@@ -110,6 +116,7 @@ Omni.techLinks = {
     site_tech.classList.add('site-tech')
     if (cl !== '') site_tech.classList.add(cl)
     site.tech.sort().forEach((tech) => {
+      Omni.techTags.add(tech)
       site_tech.innerHTML += `<span class='tag ${tech}'><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
     })
 
@@ -258,6 +265,36 @@ Omni.techLinks = {
       current.height(article_height * height_mod)
     }
   }
+
+  const filter = document.getElementById('filter')
+  Array.from(Omni.techTags)
+    .sort()
+    .forEach((tag) => {
+      const button = document.createElement('button')
+      button.addEventListener('click', ({ target }) => {
+        const tech = target.dataset.keyword
+        if (!Omni.filterList.includes(tech)) {
+          Omni.filterList.push(tech)
+          target.classList.add('active')
+        } else {
+          Omni.filterList = Omni.filterList.filter((t) => t != tech)
+          target.classList.remove('active')
+        }
+
+        if (Omni.filterList.length) {
+          filter
+            .querySelector('button:first-of-type')
+            .classList.remove('active')
+        } else {
+          filter.querySelector('button:first-of-type').classList.add('active')
+        }
+      })
+      button.classList.add('change-filter')
+      button.dataset.keyword = tag
+      button.innerHTML = Omni.techLinks[tag].title
+
+      filter.appendChild(button)
+    })
 
   // if local dev, update title
   if (Omni.env == 'local') {
