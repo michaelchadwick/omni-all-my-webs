@@ -94,6 +94,7 @@ Omni.filterList = []
     const section = document.createElement('section')
     section.id = `site-${site.name.replace(/\s/g, '').toLowerCase()}`
     if (cl !== '') section.classList.add(cl)
+    section.dataset.tech = site.tech.sort()
 
     // create inner
     const section_inner = document.createElement('div')
@@ -191,6 +192,60 @@ Omni.filterList = []
     })
   }
 
+  function change_filter({ target }) {
+    const tech = target.dataset.keyword
+
+    if (!Omni.filterList.includes(tech)) {
+      Omni.filterList.push(tech)
+      target.classList.add('active')
+    } else {
+      Omni.filterList = Omni.filterList.filter((t) => t != tech)
+      target.classList.remove('active')
+    }
+
+    if (tech == 'all') {
+      Omni.filterList = []
+      document.querySelectorAll('#filter .change-filter').forEach((button) => {
+        button.classList.remove('active')
+      })
+      target.classList.add('active')
+      document
+        .querySelectorAll('.main-container article section')
+        .forEach((site) => {
+          site.classList.remove('hidden')
+        })
+    }
+
+    // if we have an active filter, turn off 'all'
+    // go through site tech and hide ones that don't match
+    if (Omni.filterList.length) {
+      filter.querySelector('button:first-of-type').classList.remove('active')
+
+      document
+        .querySelectorAll('.main-container article section')
+        .forEach((site) => {
+          // if this site's tech array has no overlap with filterList
+          // then there is no match and we should hide it
+          const siteTechArray = site.dataset.tech.split(',')
+          if (
+            siteTechArray.filter((value) => Omni.filterList.includes(value))
+              .length == 0
+          ) {
+            site.classList.add('hidden')
+          } else {
+            site.classList.remove('hidden')
+          }
+        })
+    } else {
+      filter.querySelector('button:first-of-type').classList.add('active')
+      document
+        .querySelectorAll('.main-container article section')
+        .forEach((site) => {
+          site.classList.remove('hidden')
+        })
+    }
+  }
+
   // pull site creation data
   const result = await fetch('assets/json/sites.json')
   const data = await result.json()
@@ -266,29 +321,17 @@ Omni.filterList = []
     }
   }
 
+  // turn tech tags into nav buttons
   const filter = document.getElementById('filter')
+  // add event listener to "All" button
+  filter
+    .querySelector('button:first-of-type')
+    .addEventListener('click', change_filter)
   Array.from(Omni.techTags)
     .sort()
     .forEach((tag) => {
       const button = document.createElement('button')
-      button.addEventListener('click', ({ target }) => {
-        const tech = target.dataset.keyword
-        if (!Omni.filterList.includes(tech)) {
-          Omni.filterList.push(tech)
-          target.classList.add('active')
-        } else {
-          Omni.filterList = Omni.filterList.filter((t) => t != tech)
-          target.classList.remove('active')
-        }
-
-        if (Omni.filterList.length) {
-          filter
-            .querySelector('button:first-of-type')
-            .classList.remove('active')
-        } else {
-          filter.querySelector('button:first-of-type').classList.add('active')
-        }
-      })
+      button.addEventListener('click', change_filter)
       button.classList.add('change-filter')
       button.dataset.keyword = tag
       button.innerHTML = Omni.techLinks[tag].title
