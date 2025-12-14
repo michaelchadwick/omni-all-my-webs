@@ -109,7 +109,7 @@ Omni.techLinks = {
     const site_tech = document.createElement('div')
     site_tech.classList.add('site-tech')
     if (cl !== '') site_tech.classList.add(cl)
-    site.tech.forEach((tech) => {
+    site.tech.sort().forEach((tech) => {
       site_tech.innerHTML += `<span class='tag ${tech}'><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
     })
 
