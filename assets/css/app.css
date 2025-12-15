@@ -221,6 +221,10 @@ section .site-inner .site-link {
     height: auto;
   }
 
+  @media (min-width: 1200px) {
+    max-height: 30px;
+  }
+
   .change-filter {
     background-color: #cdbd99;
     border-radius: 5px;
@@ -246,6 +250,10 @@ section .site-inner .site-link {
 
   @media (min-width: 768px) {
     top: 107px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 67px;
   }
 
   .wrapper,
