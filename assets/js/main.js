@@ -297,29 +297,29 @@ Omni.filterList = []
     enable_lazy_loading()
   }
 
-  window.onresize = function () {
-    const current_sections = document.getElementsByTagName(
-      'article#sites-current section'
-    )
+  // window.onresize = function () {
+  //   const current_sections = document.getElementsByTagName(
+  //     'article#sites-current section'
+  //   )
 
-    current_sections.forEach((element) => {})
-    if (window.innerWidth < 1030) {
-      current.height('auto')
-    } else {
-      let article_height = 0
+  //   current_sections.forEach((element) => {})
+  //   if (window.innerWidth < 1030) {
+  //     current.height('auto')
+  //   } else {
+  //     let article_height = 0
 
-      // <article id='sites-current'>
-      current.each(() => {
-        article_height += 350
-      })
-      // </article>
+  //     // <article id='sites-current'>
+  //     current.each(() => {
+  //       article_height += 350
+  //     })
+  //     // </article>
 
-      // figure out height of <article>
-      let height_mod = 0.615
+  //     // figure out height of <article>
+  //     let height_mod = 0.615
 
-      current.height(article_height * height_mod)
-    }
-  }
+  //     current.height(article_height * height_mod)
+  //   }
+  // }
 
   // turn tech tags into nav buttons
   const filter = document.getElementById('filter')
