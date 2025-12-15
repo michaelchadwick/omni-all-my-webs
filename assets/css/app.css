@@ -200,31 +200,40 @@ section .site-inner .site-link {
   width: 100%;
   z-index: 2;
 
-  .wrapper {
-    margin: 0;
-
-    .title {
-      color: #4f4023;
-    }
+  .wrapper .title {
+    color: #4f4023;
   }
 }
 
 #filter {
   background: #f6f2ea;
   display: flex;
-  flex-wrap: wrap;
   gap: 3px;
+  height: 30px;
   margin-top: 5px;
+  overflow-x: auto;
   padding: 0.5rem 0.25rem;
-  position: fixed;
+  position: sticky;
   z-index: 2;
 
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
   .change-filter {
-    background-color: #c1c1c1;
+    background-color: #cdbd99;
+    border-radius: 5px;
+    color: #222;
     cursor: pointer;
+
+    &:hover {
+      background-color: #e8e1d1;
+    }
 
     &.active {
       background-color: #fff;
+      font-weight: 600;
     }
   }
 }
@@ -233,7 +242,11 @@ section .site-inner .site-link {
   margin-bottom: 142px;
   padding: 0;
   position: relative;
-  top: 107px;
+  top: 87px;
+
+  @media (min-width: 768px) {
+    top: 107px;
+  }
 
   .wrapper,
   .main {
