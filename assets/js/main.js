@@ -258,7 +258,7 @@ Omni.filterList = []
   // }
 
   const current = document.getElementById('sites-current')
-  const archived = document.getElementById('sites-archived')
+  const archived = document.getElementById('sites-archived-container')
 
   current.innerHTML = ''
   archived.innerHTML = ''

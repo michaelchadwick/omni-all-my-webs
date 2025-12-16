@@ -96,18 +96,24 @@ iframe {
 
 article {
   padding: 0;
-}
-article#sites-current {
-  box-shadow: 0 5px 10px #999;
-}
-article#sites-archived {
-  background: #ddd8ce;
-  border-top: 3px solid #c0a574;
-  clear: both;
-}
-@media (min-width: 992px) {
-  article#sites-archived {
-    height: 455px;
+
+  &#sites-current {
+    box-shadow: 0 5px 10px #999;
+  }
+
+  &#sites-archived {
+    background: #ddd8ce;
+    border-top: 3px solid #c0a574;
+    clear: both;
+
+    @media (min-width: 992px) {
+      height: 455px;
+    }
+
+    details {
+      cursor: pointer;
+      padding: 0.65em;
+    }
   }
 }
 
