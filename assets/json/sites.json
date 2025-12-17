@@ -4,26 +4,26 @@
       "name": "AOCNebHost",
       "url": "https://aoc.neb.host",
       "blurb": "Advent of Code solutions.",
-      "tech": ["ruby-on-rails", "sqlite"]
+      "tech": ["rails", "sqlite"]
     },
     {
       "name": "Audiohash",
       "url": "https://audiohash.neb.host",
       "url2": "https://ah.neb.host",
       "blurb": "Make a mix of multiple songs.",
-      "tech": ["html", "css", "js"]
+      "tech": ["html", "css", "javascript"]
     },
     {
       "name": "BitsNebHost",
       "url": "https://bits.neb.host",
       "blurb": "SoundLister for my random ideas.",
-      "tech": ["html", "css", "js", "php"]
+      "tech": ["html", "css", "javascript", "php"]
     },
     {
       "name": "Bogdle",
       "url": "https://bogdle.neb.host",
       "blurb": "Wordle-inspired Boggle clone.",
-      "tech": ["html", "css", "js", "php"]
+      "tech": ["html", "css", "javascript", "php"]
     },
     {
       "name": "Dave, You Still With Us?",
@@ -35,38 +35,38 @@
       "name": "Deckdle",
       "url": "https://deckdle.neb.host",
       "blurb": "Daily solitaire card game.",
-      "tech": ["html", "css", "js", "php"]
+      "tech": ["html", "css", "javascript", "php"]
     },
     {
       "name": "Gem Warrior",
       "url": "https://gw.neb.host",
       "blurb": "Text adventure.",
-      "tech": ["html", "css", "js"]
+      "tech": ["html", "css", "javascript"]
     },
     {
       "name": "Keebord",
       "url": "https://keebord.neb.host",
       "url2": "https://piano.neb.host",
       "blurb": "Play piano on the web.",
-      "tech": ["vue"]
+      "tech": ["vuejs"]
     },
     {
       "name": "Michael Chadwick Info",
       "url": "https://michaelchadwick.info",
       "blurb": "All you'd ever want to know about my online doings.",
-      "tech": ["jekyll", "html", "css", "js", "jquery", "php", "composer"]
+      "tech": ["jekyll", "html", "css", "javascript", "jquery", "php", "composer"]
     },
     {
       "name": "NebHost",
       "url": "https://neb.host",
       "blurb": "Homer self-hosted instance.",
-      "tech": ["bulma", "vue", "homer"]
+      "tech": ["bulma", "vuejs", "homer"]
     },
     {
       "name": "Nebyoodle",
       "url": "https://guess.nebyoolae.com",
       "blurb": "Guess the daily Nebyoolae song.",
-      "tech": ["html", "css", "js", "php"]
+      "tech": ["html", "css", "javascript", "php"]
     },
     {
       "name": "Nebyoolae Music",
@@ -79,26 +79,26 @@
       "url": "https://raffler.fun",
       "url2": "https://raffler.neb.host",
       "blurb": "You need a random pick from several choices? This is your site.",
-      "tech": ["html", "css", "js"]
+      "tech": ["html", "css", "javascript"]
     },
     {
       "name": "Rorasuketo OST",
       "url": "https://rorasuketo.win",
       "blurb": "Soundtrack to a video game.",
-      "tech": ["html", "css", "js", "jquery", "hugo"]
+      "tech": ["html", "css", "javascript", "jquery", "hugo"]
     },
     {
       "name": "Sketchage",
       "url": "https://sketchage.neb.host",
       "blurb": "Draw something.",
-      "tech": ["html", "css", "js", "jquery", "php"]
+      "tech": ["html", "css", "javascript", "jquery", "php"]
     },
     {
       "name": "Soundlister",
       "url": "https://soundlister.neb.host",
       "url2": "https://sl.neb.host",
       "blurb": "Playlist for your audio.",
-      "tech": ["html", "css", "js", "php"]
+      "tech": ["html", "css", "javascript", "php"]
     }
   ],
   "archived": [
@@ -106,7 +106,7 @@
       "name": "Pure Yellow Colour",
       "url": "https://neb.host/audio/pyc",
       "blurb": "Old band site.",
-      "tech": ["html", "css", "js", "jquery", "php"]
+      "tech": ["html", "css", "javascript", "jquery", "php"]
     },
     {
       "name": "Quibblings Podcast",

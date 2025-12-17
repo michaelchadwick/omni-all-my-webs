@@ -36,6 +36,10 @@ Omni.techLinks = {
     title: 'HTML',
     url: 'https://html.spec.whatwg.org/multipage',
   },
+  javascript: {
+    title: 'JavaScript',
+    url: 'https://262.ecma-international.org/16.0/index.html?_gl=1*1qb02y6*_ga*MTIxNTM2Nzc2OS4xNzY1NjU1MDkw*_ga_TDCK4DWEPP*czE3NjU2NTUwODkkbzEkZzAkdDE3NjU2NTUwODkkajYwJGwwJGgw',
+  },
   jekyll: {
     title: 'Jekyll',
     url: 'https://jekyllrb.com',
@@ -43,10 +47,6 @@ Omni.techLinks = {
   jquery: {
     title: 'jQuery',
     url: 'https://jquery.com',
-  },
-  js: {
-    title: 'JavaScript',
-    url: 'https://262.ecma-international.org/16.0/index.html?_gl=1*1qb02y6*_ga*MTIxNTM2Nzc2OS4xNzY1NjU1MDkw*_ga_TDCK4DWEPP*czE3NjU2NTUwODkkbzEkZzAkdDE3NjU2NTUwODkkajYwJGwwJGgw',
   },
   mysql: {
     title: 'MySQL',
@@ -60,15 +60,15 @@ Omni.techLinks = {
     title: 'PHP',
     url: 'https://php.net',
   },
-  'ruby-on-rails': {
-    title: 'Ruby on Rails',
+  rails: {
+    title: 'Rails',
     url: 'https://rubyonrails.org',
   },
   sqlite: {
     title: 'SQLite',
     url: 'https://sqlite.org',
   },
-  vue: {
+  vuejs: {
     title: 'VueJS',
     url: 'https://vuejs.org',
   },
@@ -333,6 +333,7 @@ Omni.filterList = []
       const button = document.createElement('button')
       button.addEventListener('click', change_filter)
       button.classList.add('change-filter')
+      button.classList.add(tag)
       button.dataset.keyword = tag
       button.innerHTML = Omni.techLinks[tag].title
 
