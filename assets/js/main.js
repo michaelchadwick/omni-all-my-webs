@@ -118,7 +118,7 @@ Omni.filterList = []
     if (cl !== '') site_tech.classList.add(cl)
     site.tech.sort().forEach((tech) => {
       Omni.techTags.add(tech)
-      site_tech.innerHTML += `<span class='tag ${tech}'><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
+      site_tech.innerHTML += `<span class='tag ${tech}' alt="${tech}" title="${tech}"><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
     })
 
     // e.g. https://cool.site
