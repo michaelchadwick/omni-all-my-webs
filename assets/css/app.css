@@ -1,3 +1,27 @@
+:root {
+  --bulmaBG: hsl(165, 53%, 59%);
+  --bulmaFG: hsl(220, 13%, 14%);
+  --composerBG: hsl(28, 43%, 36%);
+  --cssBG: hsl(230, 68%, 51%);
+  --drupalBG: hsl(225, 60%, 23%);
+  --homerBG: hsl(224, 60%, 53%);
+  --htmlBG: hsl(13, 60%, 50%);
+  --hugoBG: hsl(327, 65%, 43%);
+  --javascriptBG: hsl(54, 80%, 61%);
+  --jekyllBG: hsl(0, 0%, 20%);
+  --jekyllFG: hsl(46, 92%, 62%);
+  --jqueryBG: hsl(202, 78%, 75%);
+  --mysqlBG: hsl(210, 32%, 43%);
+  --phpBG: hsl(231, 27%, 44%);
+  --railsBG: hsl(5, 75%, 42%);
+  --sqliteBG: hsl(207, 55%, 57%);
+  --vuejsBG: hsl(145, 36%, 55%);
+  --wordpressBG: hsl(213, 11%, 16%);
+
+  --pure-white: hsl(255, 100%, 100%);
+  --pure-black: hsl(0, 0%, 0%);
+}
+
 @font-face {
   font-family: 'Cabin';
   src: url(https://fonts.neb.host/Cabin/static/Cabin-Regular.ttf);
@@ -60,7 +84,7 @@ h5 {
 }
 
 iframe {
-  background: #fff;
+  background: var(--pure-white);
   border: 0;
   height: 380px;
   opacity: 1;
@@ -214,11 +238,11 @@ section {
 #filter {
   background: #f6f2ea;
   display: flex;
-  gap: 3px;
+  gap: 0;
   height: 30px;
   margin-top: 5px;
   overflow-x: auto;
-  padding: 0.5rem 0.25rem;
+  padding: 0.5rem;
   position: sticky;
   z-index: 2;
 
@@ -233,17 +257,15 @@ section {
 
   .change-filter {
     background-color: #cdbd99;
+    border-color: #333;
+    border-width: 2px;
     border-radius: 5px;
-    color: #222;
+    color: #333;
     cursor: pointer;
+    margin: 0.1rem 0.1rem 0.1rem 0;
 
-    &:hover {
-      background-color: #e8e1d1;
-    }
-
-    &.active {
-      background-color: #fff;
-      font-weight: 600;
+    &:not(.active):hover {
+      filter: brightness(125%);
     }
   }
 }
@@ -280,7 +302,7 @@ section {
 }
 
 .lazy-loading {
-  background: #000;
+  background: var(--pure-black);
   opacity: 0.5;
   width: 100%;
 }
@@ -289,138 +311,168 @@ section {
   opacity: 1;
 }
 
-.tag {
-  border: 1px solid #000;
+.tag,
+#filter .change-filter.active {
+  border-color: var(--pure-black);
   border-radius: 5px;
   display: inline-block;
-  margin: 0.35em 0.25em 0.4em 0;
-  padding: 0em 0.2em;
+
+  &.all {
+    background-color: var(--pure-white);
+    color: var(--pure-black)
+  }
 
   &.bulma {
-    background-color: #5fceb3;
+    background-color: var(--bulmaBG);
+    color: var(--bulmaFG);
 
     a {
-      color: #1f2228;
+      color: var(--bulmaFG);
     }
   }
 
   &.composer {
-    background-color: #825834;
+    background-color: var(--composerBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.css {
-    background-color: #2f4ad7;
+    background-color: var(--cssBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.drupal {
-    background-color: #17285c;
+    background-color: var(--drupalBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.homer {
-    background-color: #4066cf;
+    background-color: var(--homerBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
-    }
-  }
-
-  &.html {
-    background-color: #cc5534;
-
-    a {
-      color: #fff;
-    }
-  }
-
-  &.jekyll {
-    background-color: #333333;
-
-    a {
-      color: #f7ce46;
-    }
-  }
-
-  &.jquery {
-    background-color: #8dcdf1;
-
-    a {
-      color: #000;
-    }
-  }
-
-  &.js {
-    background-color: #ebda4e;
-
-    a {
-      color: #000;
+      color: var(--pure-white);
     }
   }
 
   &.hugo {
-    background-color: #b62676;
+    background-color: var(--hugoBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
+    }
+  }
+
+  &.html {
+    background-color: var(--htmlBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.javascript {
+    background-color: var(--javascriptBG);
+    color: var(--pure-black);
+
+    a {
+      color: var(--pure-black);
+    }
+  }
+
+  &.jekyll {
+    background-color: var(--jekyllBG);
+    color: var(--jekyllFG);
+
+    a {
+      color: var(--jekyllFG);
+    }
+  }
+
+  &.jquery {
+    background-color: var(--jqueryBG);
+    color: var(--pure-black);
+
+    a {
+      color: var(--pure-black);
     }
   }
 
   &.mysql {
-    background-color: #4a6d90;
+    background-color: var(--mysqlBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.php {
-    background-color: #525b8f;
+    background-color: var(--phpBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
-  &.ruby-on-rails {
-    background-color: #bc281b;
+  &.rails {
+    background-color: var(--railsBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.sqlite {
-    background-color: #5496cd;
+    background-color: var(--sqliteBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
-  &.vue {
-    background-color: #65b687;
+  &.vuejs {
+    background-color: var(--vuejsBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
 
   &.wordpress {
-    background-color: #24282d;
+    background-color: var(--wordpressBG);
+    color: var(--pure-white);
 
     a {
-      color: #fff;
+      color: var(--pure-white);
     }
   }
+}
+
+.tag {
+  border: 2px solid var(--pure-black);
+  margin: 0.35em 0.25em 0.4em 0;
+  padding: 0 0.4rem;
+}
+
+.change-filter {
+  padding: 0.2rem 0.4rem;
 }
