@@ -253,7 +253,7 @@ section {
     height: auto;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1145px) {
     max-height: 30px;
   }
 
@@ -282,7 +282,7 @@ section {
     top: 107px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1145px) {
     margin-bottom: 122px;
     top: 75px;
   }
