@@ -135,7 +135,9 @@ article {
     }
 
     details {
+      background: #f3f0e7;
       cursor: pointer;
+      height: 30px;
       padding: 0.65em;
     }
   }
@@ -281,8 +283,8 @@ section {
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 102px;
-    top: 67px;
+    margin-bottom: 122px;
+    top: 75px;
   }
 
   .wrapper,
