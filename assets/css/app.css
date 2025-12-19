@@ -1,4 +1,5 @@
 :root {
+  --bandcampBG: hsl(198, 60%, 57%);
   --bulmaBG: hsl(165, 53%, 59%);
   --bulmaFG: hsl(220, 13%, 14%);
   --composerBG: hsl(28, 43%, 36%);
@@ -10,12 +11,20 @@
   --javascriptBG: hsl(54, 80%, 61%);
   --jekyllBG: hsl(0, 0%, 20%);
   --jekyllFG: hsl(46, 92%, 62%);
+  --jplayerBG: hsl(207, 69%, 57%);
   --jqueryBG: hsl(202, 78%, 75%);
   --mysqlBG: hsl(210, 32%, 43%);
+  --nginxBG: hsl(131, 38%, 42%);
+  --nodejsBG: hsl(101, 33%, 49%);
   --phpBG: hsl(231, 27%, 44%);
+  --pm2BG: hsl(259, 91%, 25%);
+  --postgresqlBG: hsl(180, 23%, 40%);
   --railsBG: hsl(5, 75%, 42%);
+  --redirectBG: #233026;
   --sqliteBG: hsl(207, 55%, 57%);
+  --uptimekumaBG: hsl(133, 56%, 71%);
   --vuejsBG: hsl(145, 36%, 55%);
+  --wallabagBG: hsl(214, 29%, 39%);
   --wordpressBG: hsl(213, 11%, 16%);
 
   --pure-white: hsl(255, 100%, 100%);
@@ -145,15 +154,21 @@ article {
 
 section {
   float: none;
-  height: 515px;
   margin: 0;
   width: auto;
 
   @media (min-width: 992px) {
     float: left;
-    height: 430px;
     margin: 0;
     width: 50%;
+  }
+
+  &.iframe-embedded {
+    height: 515px;
+
+    @media (min-width: 992px) {
+      height: 430px;
+    }
   }
 
   &.hidden {
@@ -194,19 +209,19 @@ section {
       padding: 0;
     }
 
-    .site-tech {
-      background: none;
-      border: 0;
-      color: #7e6331;
-      line-height: 1.5;
-      padding: 0;
-    }
-
     .site-link {
       background: none;
       border: 0;
       display: block;
       padding: 0;
+    }
+
+    .site-tech {
+      background: none;
+      border: 0;
+      color: #7e6331;
+      line-height: 1.5;
+      padding: 0 0 0.5rem;
     }
   }
 }
@@ -227,7 +242,7 @@ section {
   background: #e9e0cf;
   border-bottom: 5px solid #d0bc94;
   height: 32px;
-  margin: 0 0 10px;
+  margin: 0;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -240,22 +255,14 @@ section {
 #filter {
   background: #f6f2ea;
   display: flex;
-  gap: 0;
-  height: 30px;
+  flex-wrap: nowrap;
+  gap: 0 0.1em;
   margin-top: 5px;
+  max-height: 35px;
   overflow-x: auto;
-  padding: 0.5rem;
+  padding: 0.4rem 0.3rem;
   position: sticky;
   z-index: 2;
-
-  @media (min-width: 768px) {
-    flex-wrap: wrap;
-    height: auto;
-  }
-
-  @media (min-width: 1145px) {
-    max-height: 30px;
-  }
 
   .change-filter {
     background-color: #cdbd99;
@@ -264,7 +271,7 @@ section {
     border-radius: 5px;
     color: #333;
     cursor: pointer;
-    margin: 0.1rem 0.1rem 0.1rem 0;
+    margin: 0;
 
     &:not(.active):hover {
       filter: brightness(125%);
@@ -276,15 +283,10 @@ section {
   margin-bottom: 142px;
   padding: 0;
   position: relative;
-  top: 87px;
-
-  @media (min-width: 768px) {
-    top: 107px;
-  }
+  top: 80px;
 
   @media (min-width: 1145px) {
     margin-bottom: 122px;
-    top: 75px;
   }
 
   .wrapper,
@@ -322,6 +324,15 @@ section {
   &.all {
     background-color: var(--pure-white);
     color: var(--pure-black)
+  }
+
+  &.bandcamp {
+    background-color: var(--bandcampBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
   }
 
   &.bulma {
@@ -405,6 +416,15 @@ section {
     }
   }
 
+  &.jplayer {
+    background-color: var(--jplayerBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
   &.jquery {
     background-color: var(--jqueryBG);
     color: var(--pure-black);
@@ -423,8 +443,44 @@ section {
     }
   }
 
+  &.nginx {
+    background-color: var(--nginxBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.nodejs {
+    background-color: var(--nodejsBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
   &.php {
     background-color: var(--phpBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.pm2 {
+    background-color: var(--pm2BG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.postgresql {
+    background-color: var(--postgresqlBG);
     color: var(--pure-white);
 
     a {
@@ -441,6 +497,15 @@ section {
     }
   }
 
+  &.redirect {
+    background-color: var(--redirectBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
   &.sqlite {
     background-color: var(--sqliteBG);
     color: var(--pure-white);
@@ -450,8 +515,26 @@ section {
     }
   }
 
+  &.uptime-kuma {
+    background-color: var(--uptimekumaBG);
+    color: var(--pure-black);
+
+    a {
+      color: var(--pure-black);
+    }
+  }
+
   &.vuejs {
     background-color: var(--vuejsBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.wallabag {
+    background-color: var(--wallabagBG);
     color: var(--pure-white);
 
     a {
@@ -471,7 +554,7 @@ section {
 
 .tag {
   border: 2px solid var(--pure-black);
-  margin: 0.35em 0.25em 0.4em 0;
+  margin: 0.25em 0.25em 0 0;
   padding: 0 0.4rem;
 }
 

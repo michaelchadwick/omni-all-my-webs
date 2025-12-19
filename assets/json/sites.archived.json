@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pure Yellow Colour",
+    "url": "https://neb.host/audio/pyc",
+    "blurb": "Old band site.",
+    "tech": ["html", "css", "javascript", "jquery", "php"]
+  },
+  {
+    "name": "Quibblings Podcast",
+    "url": "https://neb.host/podcasts/quib",
+    "blurb": "Discussing trivial things in a legitimate manner.",
+    "tech": ["wordpress"]
+  },
+  {
+    "name": "The Escort Mission Podcast",
+    "url": "https://neb.host/podcasts/tem",
+    "blurb": "Three dudes chatting about geek stuff.",
+    "tech": ["wordpress"]
+  }
+]

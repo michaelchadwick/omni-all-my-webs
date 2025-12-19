@@ -1,82 +1,8 @@
-// Omni object init
-if (typeof Omni === 'undefined') var Omni = {}
-
 const OMNI_ENV_PROD_URL = ['omni.neb.host']
 
 Omni.env = OMNI_ENV_PROD_URL.includes(document.location.hostname)
   ? 'prod'
   : 'local'
-
-Omni.techLinks = {
-  bulma: {
-    title: 'Bulma',
-    url: 'https://bulma.io',
-  },
-  composer: {
-    title: 'Composer',
-    url: 'https://getcomposer.org',
-  },
-  css: {
-    title: 'CSS',
-    url: 'https://www.w3.org/Style/CSS/',
-  },
-  drupal: {
-    title: 'Drupal',
-    url: 'https://drupal.org',
-  },
-  homer: {
-    title: 'Homer',
-    url: 'https://github.com/bastienwirtz/homer',
-  },
-  hugo: {
-    title: 'Hugo',
-    url: 'https://gohugo.io',
-  },
-  html: {
-    title: 'HTML',
-    url: 'https://html.spec.whatwg.org/multipage',
-  },
-  javascript: {
-    title: 'JavaScript',
-    url: 'https://262.ecma-international.org/16.0/index.html?_gl=1*1qb02y6*_ga*MTIxNTM2Nzc2OS4xNzY1NjU1MDkw*_ga_TDCK4DWEPP*czE3NjU2NTUwODkkbzEkZzAkdDE3NjU2NTUwODkkajYwJGwwJGgw',
-  },
-  jekyll: {
-    title: 'Jekyll',
-    url: 'https://jekyllrb.com',
-  },
-  jquery: {
-    title: 'jQuery',
-    url: 'https://jquery.com',
-  },
-  mysql: {
-    title: 'MySQL',
-    url: 'https://mysql.com',
-  },
-  node: {
-    title: 'NodeJS',
-    url: 'https://nodejs.org',
-  },
-  php: {
-    title: 'PHP',
-    url: 'https://php.net',
-  },
-  rails: {
-    title: 'Rails',
-    url: 'https://rubyonrails.org',
-  },
-  sqlite: {
-    title: 'SQLite',
-    url: 'https://sqlite.org',
-  },
-  vuejs: {
-    title: 'VueJS',
-    url: 'https://vuejs.org',
-  },
-  wordpress: {
-    title: 'Wordpress',
-    url: 'https://wordpress.org',
-  },
-}
 
 // will be filled up as sites are created
 Omni.techTags = new Set([])
@@ -94,6 +20,7 @@ Omni.filterList = []
     const section = document.createElement('section')
     section.id = `site-${site.name.replace(/\s/g, '').toLowerCase()}`
     if (cl !== '') section.classList.add(cl)
+    if (!site.hideIframe) section.classList.add('iframe-embedded')
     section.dataset.tech = site.tech.sort()
 
     // create inner
@@ -116,10 +43,12 @@ Omni.filterList = []
     const site_tech = document.createElement('div')
     site_tech.classList.add('site-tech')
     if (cl !== '') site_tech.classList.add(cl)
-    site.tech.sort().forEach((tech) => {
-      Omni.techTags.add(tech)
-      site_tech.innerHTML += `<span class='tag ${tech}' alt="${tech}" title="${tech}"><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
-    })
+    if (site.tech.length) {
+      site.tech.sort().forEach((tech) => {
+        Omni.techTags.add(tech)
+        site_tech.innerHTML += `<span class='tag ${tech}' alt="${tech}" title="${tech}"><a href='${Omni.techLinks[tech].url}' target='_blank'>${Omni.techLinks[tech].title}</a>`
+      })
+    }
 
     // e.g. https://cool.site
     const site_link = document.createElement('h5')
@@ -141,23 +70,26 @@ Omni.filterList = []
       site_link.append(site_link_anchor2)
     }
 
-    // e.g. [web-screenshot-goes-here]
-    const site_iframe_frame = document.createElement('div')
-    site_iframe_frame.classList.add('iframe-frame')
-    const site_iframe = document.createElement('iframe')
-    site_iframe.id = `iframe-${site.name.replace(/\s/g, '').toLowerCase()}`
-    site_iframe.setAttribute('data-src', site.url)
-    // this doesn't work because they are dynamically generated :-(
-    // site_iframe.loading = 'lazy'
-    site_iframe.addEventListener(
-      'load',
-      function () {
-        console.log('this.iframe loaded', this)
-      },
-      true
-    )
+    // e.g. [website-embedded-here]
+    let site_iframe_frame
+    if (!site.hideIframe) {
+      site_iframe_frame = document.createElement('div')
+      site_iframe_frame.classList.add('iframe-frame')
+      const site_iframe = document.createElement('iframe')
+      site_iframe.id = `iframe-${site.name.replace(/\s/g, '').toLowerCase()}`
+      site_iframe.setAttribute('data-src', site.url)
+      // this doesn't work because they are dynamically generated :-(
+      // site_iframe.loading = 'lazy'
+      site_iframe.addEventListener(
+        'load',
+        function () {
+          console.log('this.iframe loaded', this)
+        },
+        true
+      )
 
-    site_iframe_frame.append(site_iframe)
+      site_iframe_frame.append(site_iframe)
+    }
 
     // end specific iframe
     // end inner
@@ -165,9 +97,11 @@ Omni.filterList = []
 
     section_inner.append(site_header)
     section_inner.append(site_blurb)
-    section_inner.append(site_tech)
     section_inner.append(site_link)
-    section_inner.append(site_iframe_frame)
+    section_inner.append(site_tech)
+    if (!site.hideIframe) {
+      section_inner.append(site_iframe_frame)
+    }
 
     section.append(section_inner)
 
@@ -246,37 +180,52 @@ Omni.filterList = []
     }
   }
 
-  // pull site creation data
-  const result = await fetch('assets/json/sites.json')
-  const data = await result.json()
+  let sites
 
-  // if (e.status === 404) {
-  //   $sites.html('<p>Error: json/sites.json is missing</p>')
-  // } else {
-  //   $sites.html('<p>Error: json/sites.json is malformed</p>')
-  //   $sites.append(`<textarea id='json' style='border: 1px solid #000; font-family: Consolas; height: 200px; width: 500px;'>${e.responseText}</textarea>`)
-  // }
+  const current_sites_file = await fetch('assets/json/sites.current.json')
+  const current_sites = await current_sites_file.json()
+
+  sites = current_sites
+
+  // if on local, add any private site data that exists, and update title
+  if (Omni.env == 'local') {
+    try {
+      // pull private site creation data on local
+      const private_sites_file = await fetch('assets/json/sites.private2.json')
+
+      if (private_sites_file) {
+        const private_sites = await private_sites_file.json()
+
+        sites = [...current_sites, ...private_sites].sort((a, b) => a.name.localeCompare(b.name))
+      }
+    } catch {}
+
+    if (!document.title.includes('(LH) ')) {
+      document.title = '(LH) ' + document.title
+    }
+  }
 
   const current = document.getElementById('sites-current')
-  const archived = document.getElementById('sites-archived-container')
-
   current.innerHTML = ''
-  archived.innerHTML = ''
 
   let article_height = 0
 
   // <article id='sites-current'>
-  data.current.forEach((v) => {
+  sites.forEach((v) => {
     create_site(v, current)
     article_height += 350
   })
-  // </article>
+
+  const archived_sites_file = await fetch('assets/json/sites.archived.json')
+  const archived_sites = await archived_sites_file.json()
+  const archived = document.getElementById('sites-archived-container')
+  archived.innerHTML = ''
+  sites = archived_sites
 
   // <article id='sites-archived'>
-  data.archived.forEach((v) => {
+  sites.forEach((v) => {
     create_site(v, archived, 'archived')
   })
-  // </article>
 
   // figure out height of <article>
   let height_mod = 0.615
@@ -339,11 +288,4 @@ Omni.filterList = []
 
       filter.appendChild(button)
     })
-
-  // if local dev, update title
-  if (Omni.env == 'local') {
-    if (!document.title.includes('(LH) ')) {
-      document.title = '(LH) ' + document.title
-    }
-  }
 })()
