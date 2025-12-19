@@ -39,7 +39,7 @@
   {
     "name": "Daggerheart Character Creator",
     "url": "https://dh.neb.host",
-    "blurb": "Daggerheart character creator.",
+    "blurb": "Daggerheart character template tool.",
     "tech": ["html", "css", "javascript"]
   },
   {
