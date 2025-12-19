@@ -37,6 +37,12 @@
     "tech": ["html", "css", "javascript", "php"]
   },
   {
+    "name": "Daggerheart Character Creator",
+    "url": "https://dh.neb.host",
+    "blurb": "Daggerheart character creator.",
+    "tech": ["html", "css", "javascript"]
+  },
+  {
     "name": "Gem Warrior",
     "url": "https://gw.neb.host",
     "blurb": "Text adventure.",
@@ -85,6 +91,12 @@
     "url": "https://rorasuketo.win",
     "blurb": "Soundtrack to a video game.",
     "tech": ["html", "css", "javascript", "jquery", "hugo"]
+  },
+  {
+    "name": "Satch 20",
+    "url": "https://satch20.nebyoolae.com",
+    "blurb": "Satriani covers from the first 20 years of his catalog.",
+    "tech": ["html", "css", "javascript", "php"]
   },
   {
     "name": "Sketchage",
