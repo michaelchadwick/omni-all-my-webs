@@ -191,7 +191,7 @@ Omni.filterList = []
   if (Omni.env == 'local') {
     try {
       // pull private site creation data on local
-      const private_sites_file = await fetch('assets/json/sites.private2.json')
+      const private_sites_file = await fetch('assets/json/sites.private.json')
 
       if (private_sites_file) {
         const private_sites = await private_sites_file.json()
