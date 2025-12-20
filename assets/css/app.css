@@ -154,21 +154,15 @@ article {
 
 section {
   float: none;
+  height: 515px;
   margin: 0;
   width: auto;
 
   @media (min-width: 992px) {
     float: left;
+    height: 430px;
     margin: 0;
     width: 50%;
-  }
-
-  &.iframe-embedded {
-    height: 515px;
-
-    @media (min-width: 992px) {
-      height: 430px;
-    }
   }
 
   &.hidden {
