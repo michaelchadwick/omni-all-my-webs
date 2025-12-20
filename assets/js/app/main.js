@@ -33,7 +33,11 @@ Omni.filterList = []
           }
         }
 
-        obj.set(prop, newFilter)
+        if (val !== 'all') {
+          obj.set(prop, newFilter)
+        } else {
+          obj.set(prop, '')
+        }
 
         const newUrl = `${location.pathname}?${obj.toString()}`;
         history.replaceState(null, '', newUrl);
