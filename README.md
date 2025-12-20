@@ -2,7 +2,7 @@
 
 A simple way to show a bunch of websites on a one-pager.
 
-In order to use this web app yourself, just create a `json/sites.json` file under the root in the following manner:
+In order to use this web app yourself, just create a `json/sites.current.json` file under the root in the following manner:
 
 ```json
 { "sites": [
@@ -11,14 +11,14 @@ In order to use this web app yourself, just create a `json/sites.json` file unde
     "url":   "https://website1.com",
     "url2":  "https://web1.com",
     "blurb": "Webby website.",
-    "tech":  "HTML/CSS/JS"
+    "tech":  ["html", "css", "js"]
   },
   {
     "name":  "Website Name 2",
     "url":   "https://website2.com",
     "url2":  "https://web2.com",
     "blurb": "Webbier website.",
-    "tech":  "ReactJS"
+    "tech":  ["react"]
   }
 ] }
 ```
