@@ -10,6 +10,56 @@ Omni.techTags = new Set([])
 // used to filter which sites to show
 Omni.filterList = []
 ;(async function () {
+  // check for existing filters in query string
+  const searchParams = new Proxy(new URLSearchParams(window.location.search), {
+    get: (obj, prop) => obj.get(prop),
+    set: (obj, prop, val) => {
+      if (prop === 'filter') {
+        let newFilter = ''
+
+        if (val[0] == '-') {
+          let filterArray = obj.get(prop).split(',')
+          filterArray = filterArray.filter((f) => f !== val.substring(1))
+          const newFilterSet = new Set(filterArray)
+          newFilter = Array.from(newFilterSet).sort().join(',')
+        } else {
+          if (obj.get(prop)) {
+            const filterArray = obj.get(prop).split(',')
+            filterArray.push(val)
+            const newFilterSet = new Set(filterArray)
+            newFilter = Array.from(newFilterSet).sort().join(',')
+          } else {
+            newFilter = val
+          }
+        }
+
+        obj.set(prop, newFilter)
+
+        const newUrl = `${location.pathname}?${obj.toString()}`;
+        history.replaceState(null, '', newUrl);
+
+        return true
+      }
+
+      return false
+    }
+  })
+
+  function loadFilter(tag, button) {
+    if (searchParams.filter && searchParams.filter.split(',').includes(tag)) {
+      button.classList.add('active')
+      button.click()
+    }
+  }
+
+  function addFilter(val) {
+    searchParams.filter = val
+  }
+
+  function removeFilter(val) {
+    searchParams.filter = `-${val}`
+  }
+
   function create_site(site, $article, cl = '') {
     // create anchor
     const anchor = document.createElement('a')
@@ -132,9 +182,13 @@ Omni.filterList = []
     if (!Omni.filterList.includes(tech)) {
       Omni.filterList.push(tech)
       target.classList.add('active')
+      // update query string
+      addFilter(tech)
     } else {
       Omni.filterList = Omni.filterList.filter((t) => t != tech)
       target.classList.remove('active')
+      // update query string
+      removeFilter(tech)
     }
 
     if (tech == 'all') {
@@ -285,6 +339,8 @@ Omni.filterList = []
       button.classList.add(tag)
       button.dataset.keyword = tag
       button.innerHTML = Omni.techLinks[tag].title
+
+      loadFilter(tag, button)
 
       filter.appendChild(button)
     })
