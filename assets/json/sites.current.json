@@ -109,6 +109,6 @@
     "url": "https://soundlister.neb.host",
     "url2": "https://sl.neb.host",
     "blurb": "Playlist for your audio.",
-    "tech": ["html", "css", "javascript", "php"]
+    "tech": ["html", "css", "javascript", "php", "soundlister"]
   }
 ]
