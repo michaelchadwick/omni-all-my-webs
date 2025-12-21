@@ -75,6 +75,10 @@ Omni.techLinks = {
     title: 'Redirect',
     url: 'https://nginx.org/en/docs/http/ngx_http_rewrite_module.html',
   },
+  soundlister: {
+    title: 'Soundlister',
+    url: 'https://soundlister.neb.host',
+  },
   sqlite: {
     title: 'SQLite',
     url: 'https://sqlite.org',

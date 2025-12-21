@@ -21,6 +21,7 @@
   --postgresqlBG: hsl(180, 23%, 40%);
   --railsBG: hsl(5, 75%, 42%);
   --redirectBG: #233026;
+  --slBG: #80D2B4;
   --sqliteBG: hsl(207, 55%, 57%);
   --uptimekumaBG: hsl(133, 56%, 71%);
   --vuejsBG: hsl(145, 36%, 55%);
@@ -497,6 +498,15 @@ section {
 
     a {
       color: var(--pure-white);
+    }
+  }
+
+  &.soundlister {
+    background-color: var(--slBG);
+    color: var(--pure-black);
+
+    a {
+      color: var(--pure-black);
     }
   }
 
