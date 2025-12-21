@@ -16,7 +16,7 @@
     "name": "BitsNebHost",
     "url": "https://bits.neb.host",
     "blurb": "SoundLister for my random ideas.",
-    "tech": ["html", "css", "javascript", "php"]
+    "tech": ["html", "css", "javascript", "php", "soundlister"]
   },
   {
     "name": "Bogdle",
@@ -96,7 +96,7 @@
     "name": "Satch 20",
     "url": "https://satch20.nebyoolae.com",
     "blurb": "Satriani covers from the first 20 years of his catalog.",
-    "tech": ["html", "css", "javascript", "php"]
+    "tech": ["html", "css", "javascript", "php", "soundlister"]
   },
   {
     "name": "Sketchage",
