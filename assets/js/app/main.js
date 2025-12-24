@@ -65,6 +65,10 @@ Omni.filterList = []
   }
 
   function create_site(site, $article, cl = '') {
+    if (site.disabled) {
+      return
+    }
+
     // create anchor
     const anchor = document.createElement('a')
     anchor.setAttribute('name', site.name.replace(/\s/g, '').toLowerCase())
