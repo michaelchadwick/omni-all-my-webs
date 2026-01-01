@@ -7,8 +7,7 @@
   },
   {
     "name": "Audiohash",
-    "url": "https://audiohash.neb.host",
-    "url2": "https://ah.neb.host",
+    "url": "https://neb.host/apps/audiohash",
     "blurb": "Make a mix of multiple songs.",
     "tech": ["html", "css", "javascript"]
   },
@@ -38,13 +37,13 @@
   },
   {
     "name": "Daggerheart Character Creator",
-    "url": "https://dh.neb.host",
+    "url": "https://neb.host/apps/dhcc",
     "blurb": "Daggerheart character template tool.",
     "tech": ["html", "css", "javascript"]
   },
   {
     "name": "Gem Warrior",
-    "url": "https://gw.neb.host",
+    "url": "https://neb.host/apps/gemwarrior",
     "blurb": "Text adventure.",
     "tech": ["html", "css", "javascript"]
   },
@@ -101,7 +100,7 @@
   },
   {
     "name": "Sketchage",
-    "url": "https://sketchage.neb.host",
+    "url": "https://neb.host/apps/sketchage",
     "blurb": "Draw something.",
     "tech": ["html", "css", "javascript", "jquery", "php"]
   },
