@@ -75,6 +75,10 @@ Omni.techLinks = {
     title: 'Rails',
     url: 'https://rubyonrails.org',
   },
+  react: {
+    title: 'React',
+    url: 'https://react.dev'
+  },
   redirect: {
     title: 'Redirect',
     url: 'https://nginx.org/en/docs/http/ngx_http_rewrite_module.html',
