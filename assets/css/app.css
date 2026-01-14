@@ -2,6 +2,7 @@
   --bandcampBG: hsl(198, 60%, 57%);
   --bulmaBG: hsl(165, 53%, 59%);
   --bulmaFG: hsl(220, 13%, 14%);
+  --chatgptBG: hsl(0, 0%, 2%);
   --composerBG: hsl(28, 43%, 36%);
   --cssBG: hsl(230, 68%, 51%);
   --drupalBG: hsl(225, 60%, 23%);
@@ -20,6 +21,7 @@
   --pm2BG: hsl(259, 91%, 25%);
   --postgresqlBG: hsl(180, 23%, 40%);
   --railsBG: hsl(5, 75%, 42%);
+  --reactBG: hsl(204, 48%, 40%);
   --redirectBG: #233026;
   --slBG: #80D2B4;
   --sqliteBG: hsl(207, 55%, 57%);
@@ -339,6 +341,15 @@ section {
     }
   }
 
+  &.chatgpt {
+    background-color: var(--chatgptBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
   &.composer {
     background-color: var(--composerBG);
     color: var(--pure-white);
@@ -485,6 +496,15 @@ section {
 
   &.rails {
     background-color: var(--railsBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.react {
+    background-color: var(--reactBG);
     color: var(--pure-white);
 
     a {
