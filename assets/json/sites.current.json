@@ -88,7 +88,7 @@
   {
     "name": "Rorasuketo OST",
     "url": "https://rorasuketo.win",
-    "url2": "https://rora.neb.host",
+    "url2": "https://rorasuketo.neb.host",
     "blurb": "Soundtrack to a video game.",
     "tech": ["html", "css", "javascript", "jquery", "hugo"]
   },
@@ -107,8 +107,13 @@
   {
     "name": "Soundlister",
     "url": "https://soundlister.neb.host",
-    "url2": "https://sl.neb.host",
     "blurb": "Playlist for your audio.",
     "tech": ["html", "css", "javascript", "php", "soundlister"]
+  },
+  {
+    "name": "Unlucky 7s",
+    "url": "https://neb.host/apps/ul7",
+    "blurb": "Exercise a pointless habit.",
+    "tech": ["html", "css", "javascript", "react", "chatgpt"]
   }
 ]
