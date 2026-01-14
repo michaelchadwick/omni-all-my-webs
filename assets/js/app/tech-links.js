@@ -7,6 +7,10 @@ Omni.techLinks = {
     title: 'Bulma',
     url: 'https://bulma.io',
   },
+  chatgpt: {
+    title: 'ChatGPT',
+    url: 'https://openai.com'
+  },
   composer: {
     title: 'Composer',
     url: 'https://getcomposer.org',

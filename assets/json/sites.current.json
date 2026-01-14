@@ -50,9 +50,8 @@
   {
     "name": "Keebord",
     "url": "https://keebord.neb.host",
-    "url2": "https://piano.neb.host",
     "blurb": "Play piano on the web.",
-    "tech": ["vuejs"]
+    "tech": ["html", "css", "vuejs"]
   },
   {
     "name": "Michael Chadwick Info",
