@@ -12,6 +12,12 @@
     "tech": ["html", "css", "javascript"]
   },
   {
+    "name": "Axe",
+    "url": "https://neb.host/apps/axe",
+    "blurb": "Know what you're choppin'.",
+    "tech": ["html", "css", "typescript", "vuejs"]
+  },
+  {
     "name": "BitsNebHost",
     "url": "https://bits.neb.host",
     "blurb": "SoundLister for my random ideas.",

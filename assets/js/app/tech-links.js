@@ -91,6 +91,10 @@ Omni.techLinks = {
     title: 'SQLite',
     url: 'https://sqlite.org',
   },
+  typescript: {
+    title: 'TypeScript',
+    url: 'https://typescriptlang.org',
+  },
   vuejs: {
     title: 'VueJS',
     url: 'https://vuejs.org',

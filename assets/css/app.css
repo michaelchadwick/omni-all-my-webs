@@ -25,6 +25,7 @@
   --redirectBG: #233026;
   --slBG: #80D2B4;
   --sqliteBG: hsl(207, 55%, 57%);
+  --typescriptBG: hsl(220, 48%, 50%);
   --uptimekumaBG: hsl(133, 56%, 71%);
   --vuejsBG: hsl(145, 36%, 55%);
   --wallabagBG: hsl(214, 29%, 39%);
@@ -532,6 +533,15 @@ section {
 
   &.sqlite {
     background-color: var(--sqliteBG);
+    color: var(--pure-white);
+
+    a {
+      color: var(--pure-white);
+    }
+  }
+
+  &.typescript {
+    background-color: var(--typescriptBG);
     color: var(--pure-white);
 
     a {
