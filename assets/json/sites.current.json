@@ -85,8 +85,7 @@
   },
   {
     "name": "Raffler",
-    "url": "https://raffler.fun",
-    "url2": "https://raffler.neb.host",
+    "url": "https://raffler.neb.host",
     "blurb": "You need a random pick from several choices? This is your site.",
     "tech": ["html", "css", "javascript"]
   },
