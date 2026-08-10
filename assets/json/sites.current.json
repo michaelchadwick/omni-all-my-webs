@@ -13,7 +13,8 @@
   },
   {
     "name": "Axe",
-    "url": "https://neb.host/apps/axe",
+    "url": "https://axe.neb.host",
+    "url2": "https://neb.host/apps/axe",
     "blurb": "Know what you're choppin'.",
     "tech": ["html", "css", "typescript", "vuejs"]
   },
